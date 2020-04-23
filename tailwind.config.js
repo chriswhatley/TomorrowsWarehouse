@@ -31,7 +31,7 @@ module.exports = {
         200: '#fed7d7',
         300: '#feb2b2',
         400: '#fc8181',
-        500: '#f56565',
+        500: '#d2232a',
         600: '#e53e3e',
         700: '#c53030',
         800: '#9b2c2c',
@@ -146,6 +146,9 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '72': '18rem',
+      '84': '21rem',
+      '96': '24rem',
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -691,5 +694,7 @@ module.exports = {
     transitionDuration: ['responsive'],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [
+    require('autoprefixer'),
+  ],
 }
