@@ -14,5 +14,11 @@ return [
     'resourcePath' => function ($page, $resourcePath){
     	return trim($page->baseUrl, '/') . $resourcePath;
     },
-    'collections' => [],
+    'collections' => [
+        'exhibitors' => [
+            'exhibitor' => 'Exhibitor Name', // Default exhibitor name, if not provided in an exhibitor profile
+            'sort' => '-exhibitor',
+            'path' => 'exhibitors/{filename}',
+        ],
+    ],
 ];
