@@ -7,13 +7,18 @@
 	@apply px-2 py-2 mt-2 text-sm uppercase font-semibold border-b-2 border-transparent transition duration-300 ease-in-out
 }
 
+.nav-item.selected,
 .nav-item:hover {
+	@apply border-red-600
+}
+
+.nav-item.selected {
 	@apply border-red-600
 }
 
 /* Main Nav Dropdown Menu Items */
 .nav-dropdown-item {
-	@apply block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded
+	@apply block px-4 py-2 text-sm font-semibold bg-transparent rounded
 }
 
 .nav-dropdown-item:hover {
@@ -64,4 +69,13 @@
 
 .btn-gray:hover {
 	@apply bg-gray-800
+}
+
+.smallprint 
+	h4 {
+		@apply mt-10 mb-1 font-semibold uppercase
+	}
+
+	p {
+		@apply mb-4
 }

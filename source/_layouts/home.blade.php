@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ $page->siteTitle }}</title>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{ trim($page->baseUrl, '/') }}{{ mix('css/main.css') }}">
+         @include('_partials/meta')
     </head>
     <body class="antialiased font-sans">
         
-        <section class="text-white bg-gray-900 bg-center bg-cover md:bg-fixed" style="background-image: url(assets/img/hero-1-compressed.jpg);">  
+        <section class="text-white bg-gray-900 bg-center bg-cover md:bg-fixed" style="background-image: url({{ $page->resourcePath('/assets/img/hero-2-no-overlay-compressed.jpg') }});">  
      
-            @include('_partials/navigation')
+            <div class="absolute w-full z-50" x-data="{ open: false }">
+                <div class="fixed w-full pb-4 bg-gray-900 shadow-lg">
+                    @include('_partials/navigation')
+                </div>
+            </div>
                
             <div class="container mx-auto">
                 <div class="flex px-5 pt-40 pb-24 md:flex-row flex-col items-center z-50">
@@ -29,7 +28,7 @@
                             Ricoh Arena, Coventry
                         </p>
                         <div class="flex justify-center">
-                            <a href="" class="btn btn-red mr-1">
+                            <a href="{{ $page->resourcePath('/why-visit') }}" class="btn btn-red mr-1">
                                 <div>Visit</div>
                                 <div>
                                     <svg class="fill-current text-white inline-block h-6 w-4">
@@ -38,7 +37,7 @@
                                 </div>
                             </a>
 
-                            <a href="" class="btn btn-gray">
+                            <a href="{{ $page->resourcePath('/why-exhibit') }}" class="btn btn-gray">
                                 <div>Exhibit</div>
                                 <div>
                                     <svg class="fill-current text-white inline-block h-6 w-4">
@@ -57,7 +56,5 @@
         @yield('content')
 
         @include('_partials/footer')
-
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </body>
 </html>
