@@ -14,7 +14,7 @@
 				<h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Visiting Tomorrow's Warehouse </h2> 
     			<p class="leading-relaxed">Tomorrow's Warehouse is a one day, free to attend conference tackling operational challenges in warehousing and logistics at a time of unprecedented transformation.</p>
 				
-				<div class="bg-gray-600 mt-4 p-6  font-semibold text-md uppercase text-center text-white">
+				<div class="bg-gray-600 mt-4 p-6  font-semibold text-md uppercase text-center text-white rounded">
 					<span class="block text-2xl">Save the date</span>
 					<span class="block mt-3 text-md">September 30, 2020 at the Ricoh Arena - Coventry</span>
 				</div>
@@ -33,7 +33,7 @@
                 </div>
     		</div>
 
-    		<div class="hidden md:block md:w-1/2 bg-center bg-cover" style="background-image: url({{ $page->resourcePath('/assets/img/why-visit-1-compressed.jpg') }})"></div>
+    		<div class="hidden md:block md:w-1/2 bg-center bg-cover rounded overflow-hidden" style="background-image: url({{ $page->resourcePath('/assets/img/why-visit-1-compressed.jpg') }})"></div>
 		</div>
 	</div>
 	

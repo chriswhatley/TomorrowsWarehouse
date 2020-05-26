@@ -3,20 +3,29 @@
 @section('content')
 	
 	<div class="container mx-auto">
-    	<div class="flex flex-wrap py-6 md:py-10 px-5">
+    	<div class="flex flex-wrap px-2 py-6">
 
-    		<div class="w-full md:w-1/2 md:pr-10">
+			<div class="flex flex-wrap">
+
+				@foreach($exhibitors as $exhibitor)
+					<div class="flex w-1/2 md:w-1/3 lg:w-1/4 p-2 font-bold uppercase">
+						<a href="{{ $exhibitor->getPath() }}" class="w-full p-3 md:p-4 text-gray-800 bg-gray-300 rounded hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out">
+							
+							@if ($exhibitor->logo)
+					            <div class="bg-white rounded-sm overflow-hidden">
+					            	<img src="{{ $exhibitor->logo_thumb }}" alt="{{ $exhibitor->name }}" class="mx-auto">
+					            </div>
+				            @endif
+
+							<div class="text-sm sm:text-md mt-3">{{ $exhibitor->name }}</div>
+							<div class="text-sm">Stand : {{ $exhibitor->stand_number }}</div>
+						</a>
+					</div>
+				@endforeach
+
+			</div>
 				
-				<h3 class="pb-1 text-md md:text-lg font-bold leading-tight uppercase tracking-tight">Exhibitor List</h3>
-				<p class="mt-6">Coming soon...</p>
-
-	        </div>
-
-	       
-
-	      
-
-		</div>		
+	    </div>		
 	</div>
 	
 	@include('_partials/parallax-exhibit')

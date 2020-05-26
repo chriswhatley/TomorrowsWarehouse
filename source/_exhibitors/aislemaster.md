@@ -1,12 +1,13 @@
 ---
 extends: _layouts.exhibitor
 section: profile_content
-exhibitor: Aisle Master
+name: Aisle Master
 stand_number: F1
 address: Aisle-Master Ltd, Gallinagh, Monaghan  Town, Co. Monaghan, Ireland
 website: http://www.aisle-master.com
 description: Aisle Master is the world’s largest selling articulated forklift – and with good reason. These  versatile,  tough and extremely reliable trucks replace a combination of reach and counterbalance forklifts and can potentially double storage capacity for substantial cost savings.
 logo: /assets/img/exhibitors/aislemaster.png
+logo_thumb: /assets/img/exhibitors/aislemaster-thumb.png
 ---
 
 **The versatile articulated truck that does it all**

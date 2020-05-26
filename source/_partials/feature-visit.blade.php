@@ -2,7 +2,7 @@
 	<div class="flex flex-wrap my-1 md:my-8 text-white text-center"> 
 
 		<div class="w-full md:w-1/3 flex flex-col p-3">
-			<div class="bg-gray-800 overflow-hidden flex-1 flex flex-col">
+			<div class="bg-gray-800 overflow-hidden flex-1 flex flex-col rounded">
 				<div class="bg-cover h-48" style="background-image: url({{ $page->resourcePath('/assets/img/factory-1-compressed.jpg') }});"></div>
 				<div class="p-4 flex-1 flex flex-col" style="">
 					<div class="mb-4 flex-1">
@@ -21,7 +21,7 @@
 		</div>
 
 		<div class="w-full md:w-1/3 flex flex-col p-3">
-			<div class="bg-gray-600 overflow-hidden flex-1 flex flex-col">
+			<div class="bg-gray-600 overflow-hidden flex-1 flex flex-col rounded">
 				<div class="bg-cover bg-center h-48" style="background-image: url({{ $page->resourcePath('/assets/img/conference-1-compressed.jpg') }});"></div>
 				<div class="p-4 flex-1 flex flex-col" style="">
 					<div class="mb-4 flex-1">
@@ -40,7 +40,7 @@
 		</div>
 
 		<div class="w-full md:w-1/3 flex flex-col p-3">
-			<div class="bg-gray-800 overflow-hidden flex-1 flex flex-col">
+			<div class="bg-gray-800 overflow-hidden flex-1 flex flex-col rounded">
 				<div class="bg-cover bg-bottom h-48" style="background-image: url({{ $page->resourcePath('/assets/img/why-exhibit-1-compressed.jpg') }});"></div>
 				<div class="p-4 flex-1 flex flex-col" style="">
 					<div class="mb-4 flex-1">

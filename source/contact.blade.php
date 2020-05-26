@@ -13,7 +13,7 @@
 				<div class="flex flex-wrap -mx-2 text-white">
 
 					<div class="w-full md:w-full lg:w-1/3 mb-4 px-2">
-						<div class="bg-gray-800 h-full p-6">
+						<div class="bg-gray-800 h-full p-6 rounded">
 							<h3 class="pb-4 text-lg md:text-xl font-bold leading-tight uppercase tracking-tight">Exhibiting &amp; Sponsorship</h3>
 							<p class="leading-relaxed">For the opportunity to present your brand & products to end-users and logistics professionals who are looking to explore critical issues that are transforming their warehouse and logistics operations, please contact:</p>
 							<div class="mt-4">
@@ -40,7 +40,7 @@
 					</div>
 
 					<div class="w-full md:w-1/2 lg:w-1/3 mb-4 px-2">
-						<div class="bg-gray-600 h-full p-6">
+						<div class="bg-gray-600 h-full p-6 rounded">
 							<h3 class="pb-4 text-lg md:text-xl font-bold leading-tight uppercase tracking-tight">Seminar Programme</h3>
 							<p class="leading-relaxed">If you are interested in being a part of the Tomorrow’s Warehouse seminar programme as a speaker on any of the subject areas please send in your proposals to:</p>
 							<div class="mt-4">
@@ -68,7 +68,7 @@
 					</div>
 
 					<div class="w-full md:w-1/2 lg:w-1/3 mb-4 px-2">
-						<div class="bg-red-500 h-full p-6">
+						<div class="bg-red-500 h-full p-6 rounded">
 							<h3 class="pb-4 text-lg md:text-xl font-bold leading-tight uppercase tracking-tight">Visiting &amp; Registration</h3>
 							<p class="leading-relaxed">For all visitor and registration-based enquiries, please contact:</p>
 							<div class="mt-4">

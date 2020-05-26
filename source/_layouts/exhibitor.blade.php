@@ -1,8 +1,8 @@
 @extends('_layouts.master', 
     [
-        'page_title' => "$page->exhibitor",
+        'page_title' => "$page->name",
         'nav_selector' => 'visit',
-        'meta_title' => "Tomorrow's Warehouse Exhibitor : $page->exhibitor",
+        'meta_title' => "Tomorrow's Warehouse Exhibitor : $page->name",
         'meta_description' => "$page->description"
     ]
 )
@@ -12,15 +12,27 @@
     <div class="container mx-auto mb-8">
         <div class="flex flex-wrap py-6 md:py-10 px-4">
 
+            <div>
+                <a class="text-xs uppercase" href="{{ $page->resourcePath('/exhibitors') }}" title="Return to exhibitor list">
+                    <svg class="transform rotate-180 fill-current inline-block h-5 w-4">
+                        <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
+                    </svg>
+                    <span class="-ml-1">Back to Exhibitor List</span>
+                </a>
+            </div>
+
             @if ($page->logo)
-	            <div class="w-full">
-	            	<img src="{{ $page->logo }}" alt="{{ $page->exhibitor }}" class="mb-2 md:max-w-xs">
+	            <div class="w-full mt-6">
+	            	<img src="{{ $page->logo }}" alt="{{ $page->name }}" class="w-1/2 mx-auto mb-2 sm:w-1/3 md:w-1/4 md:mx-0">
 	            </div>
             @endif
 
             <div class="w-full mt-6 md:mt-4 md:w-1/3 order-1 md:order-2">
             	<div class="p-6 bg-gray-800 rounded text-white">
             		<div class="text-2xl font-bold uppercase">Stand No : {{ $page->stand_number }}</div>
+                    <div class="mt-3">
+                        <span class="block text-sm font-bold uppercase">{{ $page->name }}</span>
+                    </div>
 	            	<div class="mt-3">
 	            		<span class="block text-sm font-bold uppercase">Address</span>
 	            		{{ $page->address }}
@@ -38,28 +50,28 @@
          
         </div>  
 
-         <nav class="w-full px-4 flex justify-center md:justify-end text-sm md:text-base">	 
-          	<div>
-           		@if ($next = $page->getNext())
-	           		<a class="btn btn-gray" href="{{ $next->getUrl() }}" title="Previous Exhibitor: {{ $next->exhibitor }}">
-	           			<svg class="transform rotate-180 fill-current text-white inline-block h-6 w-4">
+         <nav class="w-full px-4 flex flex-wrap justify-center md:justify-end text-sm md:text-base">	 
+            <div class="my-1 mr-1">
+                @if ($previous = $page->getPrevious())
+                    <a class="btn btn-gray" href="{{ $previous->getUrl() }}" title="Previous Exhibitor: {{ $previous->name }}">
+                        <svg class="transform rotate-180 fill-current text-white inline-block h-6 w-4">
                             <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
                         </svg>
-                        {{ $next->exhibitor }}
-	           		</a>
-           		@endif
-           	</div>    
+                        {{ $previous->name }}                    
+                    </a>
+                @endif
+            </div>   
 
-           	<div class="ml-2">
-           		@if ($previous = $page->getPrevious())
-	           		<a class="btn btn-red" href="{{ $previous->getUrl() }}" title="Next Exhibitor: {{ $previous->exhibitor }}">
-	           			{{ $previous->exhibitor }}
-	           			<svg class="fill-current text-white inline-block h-6 w-4">
+            <div class="my-1 ml-1">
+                @if ($next = $page->getNext())
+                    <a class="btn btn-red" href="{{ $next->getUrl() }}" title="Next Exhibitor: {{ $next->name }}">                      
+                        {{ $next->name }}
+                        <svg class="fill-current text-white inline-block h-6 w-4">
                             <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
                         </svg>
-	           		</a>
-           		@endif
-           	</div>	      
+                    </a>
+                @endif
+            </div>     	      
        </nav>    
     </div>
     

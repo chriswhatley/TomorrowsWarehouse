@@ -1,12 +1,13 @@
 ---
 extends: _layouts.exhibitor
 section: profile_content
-exhibitor: Combilift
+name: Combilift
 stand_number: F2
 address: Combilift Limited, Annahagh, H18 YW81 Monaghan, Ireland
 website: http://www.combilift.com
 description: Combilift is globally acknowledged as one of the most innovative manufacturers of customised material handling solutions for a wide range of industry sectors. 
 logo: /assets/img/exhibitors/combilift.png
+logo_thumb: /assets/img/exhibitors/combilift-thumb.png
 ---
 
 Combilift is globally acknowledged as one of the most innovative manufacturers of customised material handling solutions for a wide range of industry sectors. Since Combilift was established in 1998 with the launch of the world’s first I.C engine powered, all-wheel drive multi-directional forklift, it has produced over 45,000 units of a wide range of models which have been sold in over 85 countries.
