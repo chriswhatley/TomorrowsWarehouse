@@ -639,7 +639,7 @@ video {
   text-transform: uppercase;
   font-weight: 600;
   border-bottom-width: 2px;
-  border-color: transparent;
+  border-color: #1a202c;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
@@ -664,7 +664,6 @@ video {
   padding-bottom: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
-  background-color: transparent;
   border-radius: 0.25rem
 }
 
