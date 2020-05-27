@@ -12,6 +12,10 @@
 	@apply border-red-600
 }
 
+.nav-item:visited {
+	@apply text-white border-gray-900
+}
+
 .nav-item.selected {
 	@apply border-red-600
 }

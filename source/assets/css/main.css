@@ -650,6 +650,11 @@ video {
   border-color: #e53e3e
 }
 
+.nav-item:visited {
+  color: #fff;
+  border-color: #1a202c
+}
+
 .nav-item.selected {
   border-color: #e53e3e
 }
