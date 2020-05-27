@@ -9,11 +9,11 @@
 
 				@foreach($exhibitors as $exhibitor)
 					<div class="flex w-1/2 md:w-1/3 lg:w-1/4 p-2 font-bold uppercase">
-						<a href="{{ $exhibitor->getPath() }}" class="w-full p-3 md:p-4 text-gray-800 bg-gray-300 rounded hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out">
+						<a href="{{ $page->resourcePath($exhibitor->getPath()) }}" class="w-full p-3 md:p-4 text-gray-800 bg-gray-300 rounded hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out">
 							
 							@if ($exhibitor->logo)
 					            <div class="bg-white rounded-sm object-cover object-center overflow-hidden">
-					            	<img src="{{ $exhibitor->logo_thumb }}" alt="{{ $exhibitor->name }}" class="mx-auto">
+					            	<img src="{{ $page->resourcePath($exhibitor->logo_thumb) }}" alt="{{ $exhibitor->name }}" class="mx-auto">
 					            </div>
 				            @endif
 

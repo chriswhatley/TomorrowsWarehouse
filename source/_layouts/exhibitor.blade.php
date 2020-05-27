@@ -23,7 +23,7 @@
 
             @if ($page->logo)
 	            <div class="w-full mt-6">
-	            	<img src="{{ $page->logo }}" alt="{{ $page->name }}" class="w-1/2 mx-auto mb-2 sm:w-1/3 md:w-1/4 md:mx-0">
+	            	<img src="{{ $page->resourcePath($page->logo) }}" alt="{{ $page->name }}" class="w-1/2 mx-auto mb-2 sm:w-1/3 md:w-1/4 md:mx-0">
 	            </div>
             @endif
 
