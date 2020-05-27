@@ -12,7 +12,7 @@
 						<a href="{{ $exhibitor->getPath() }}" class="w-full p-3 md:p-4 text-gray-800 bg-gray-300 rounded hover:bg-gray-800 hover:text-white transition duration-300 ease-in-out">
 							
 							@if ($exhibitor->logo)
-					            <div class="bg-white rounded-sm overflow-hidden">
+					            <div class="bg-white rounded-sm object-cover object-center overflow-hidden">
 					            	<img src="{{ $exhibitor->logo_thumb }}" alt="{{ $exhibitor->name }}" class="mx-auto">
 					            </div>
 				            @endif

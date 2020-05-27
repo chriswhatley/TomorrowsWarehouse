@@ -25,7 +25,7 @@
 					</div>
 					<div class="w-1/2">
 						<p class="leading-relaxed">
-							30th Sept<span class="inline-block md:hidden">.</span><span class="hidden md:inline-block">ember</span> 2020<br />
+							9th June 2021<br />
 							09:00 - 17:00
 						</p>
 					</div>

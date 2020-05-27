@@ -16,7 +16,7 @@
 	                       <img src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" class="lazyload" />
 	                    </div>
 	                    <div class="w-full  text-white tracking-tight">
-	                        Wednesday 30<sup>th</sup> September 2020
+	                        Wednesday 9<sup>th</sup> June 2021
 	                    </div>
 	                </div>                                      
 

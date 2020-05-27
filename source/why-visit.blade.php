@@ -16,7 +16,7 @@
 				
 				<div class="bg-gray-600 mt-4 p-6  font-semibold text-md uppercase text-center text-white rounded">
 					<span class="block text-2xl">Save the date</span>
-					<span class="block mt-3 text-md">September 30, 2020 at the Ricoh Arena - Coventry</span>
+					<span class="block mt-3 text-md">9th June, 2021 at the Ricoh Arena - Coventry</span>
 				</div>
 				
 				<p class="mt-4 leading-relaxed">The Tomorrow's Warehouse Event has been launched to tackle the concerns of End Users and Logistics Professionals as they face the future in an exciting, dynamic and fast-changing industry.</p>

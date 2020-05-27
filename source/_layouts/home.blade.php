@@ -22,7 +22,7 @@
                             <br class="hidden lg:inline-block">Event
                         </h1>
                         <p class="mb-8 text-lg font-semibold leading-relaxed tracking-tight">
-                            30th September 2020                        
+                            9th June 2021                        
                             <span class="hidden md:inline-block"> - </span>
                             <br class="inline-block md:hidden" />
                             Ricoh Arena, Coventry

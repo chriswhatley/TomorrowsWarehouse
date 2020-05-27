@@ -67,7 +67,7 @@
    
             <div class="flex py-12 flex-row flex-col items-center">
                 <h2 class="text-center text-2xl md:text-3xl uppercase font-semibold leading-tight tracking-tight mb-2 font-medium">Tomorrow's Warehouse</h2>
-                <p class="w-full text-center leading-relaxed font-semibold uppercase">30<span class="text-xs lowercase">th</span> September 2020 <br class="block md:hidden"> <span class="hidden md:inline-block"> | </span> Ricoh Arena, Coventry</p>
+                <p class="w-full text-center leading-relaxed font-semibold uppercase">9<span class="text-xs lowercase">th</span> June 2021 <br class="block md:hidden"> <span class="hidden md:inline-block"> | </span> Ricoh Arena, Coventry</p>
 
                 <div class="flex flex-wrap w-full md:w-auto">
 
@@ -140,7 +140,7 @@
                     <h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">
 	                    Register Your Interest
 	                </h2>                        
-                    <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam pariatur harum culpa inventore porro unde sapiente iste asperiores, itaque modi libero! Minus sunt ipsa iusto sapiente ad nesciunt similique! Itaque.</p>
+                    <p class="leading-relaxed">Don't miss this free-to attend conference  tackling operational challenges in warehousing and logistics  at a time of unprecedented transformation.</p>
                     <div class="mt-6">
                     	<a href="https://www.eventbrite.co.uk/e/90942221633" class="btn btn-gray" target="_blank">
                             <div>Register now</div>
