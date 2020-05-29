@@ -12,7 +12,7 @@
 	                </h2>                        
                     <p class="leading-relaxed">Tomorrow's Warehouse is a one-day, free-to attend conference  tackling operational challenges in warehousing and logistics  at a time of unprecedented transformation.</p>
                     <div class="mt-6">
-                    	<a href="{{ $page->registrationURL }}" target="_blank" class="btn btn-red">
+                    	<a href="{{ $page->registrationURL }}" target="_blank" class="btn btn-red" rel="noopener">
                             <div>Register Now</div>
                             <div>
                                 <svg class="fill-current text-white inline-block h-6 w-4">
@@ -74,7 +74,7 @@
                     <div class="w-1/3 px-3 md:px-10">
                         <div class="w-full py-6 md:flex md:mx-auto items-center">
                             <div class="flex inline-block w-12 md:w-20 lg:w-24 mx-auto">
-                                 <img src="{{ $page->resourcePath('/assets/img/icons/user-feature-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/user-feature-icon.svg') }}" class="lazyload" />
+                                 <img src="{{ $page->resourcePath('/assets/img/icons/user-feature-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/user-feature-icon.svg') }}" class="lazyload" alt="User Icon" />
                             </div>
                             <div class="flex flex-col mt-1 md:ml-2 text-white tracking-tight font-semibold uppercase">
                                 <div class="w-full text-center leading-tight text-sm">
@@ -89,7 +89,7 @@
                     <div class="w-1/3 px-3 md:px-10">
                         <div class="w-full py-6 md:flex md:mx-auto items-center">
                             <div class="flex inline-block w-12 md:w-20 lg:w-24 mx-auto">
-                                 <img src="{{ $page->resourcePath('/assets/img/icons/clock-feature-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/clock-feature-icon.svg') }}" class="lazyload" />
+                                 <img src="{{ $page->resourcePath('/assets/img/icons/clock-feature-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/clock-feature-icon.svg') }}" class="lazyload" alt="CLock Icon" />
                             </div>
                             <div class="flex flex-col mt-1 md:ml-2 text-white tracking-tight font-semibold uppercase">
                                 <div class="w-full text-center leading-tight text-sm">
@@ -103,7 +103,7 @@
                     <div class="w-1/3 px-3 md:px-10">
                         <div class="w-full py-6 md:flex md:mx-auto items-center">
                             <div class="flex inline-block w-12 md:w-20 lg:w-24 mx-auto">
-                                 <img src="{{ $page->resourcePath('/assets/img/icons/education-feature-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/education-feature-icon.svg') }}" class="lazyload" />
+                                 <img src="{{ $page->resourcePath('/assets/img/icons/education-feature-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/education-feature-icon.svg') }}" class="lazyload" alt="Education Icon" />
                             </div>
                             <div class="flex flex-col mt-1 md:ml-1 text-white tracking-tight font-semibold uppercase">
                                 <div class="w-full text-center leading-tight text-sm">
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="mt-4">
-                    <a href="{{ $page->registrationURL }}" class="btn btn-red">
+                    <a href="{{ $page->registrationURL }}" class="btn btn-red" rel="noopener">
                         <div>Register Now</div>
                         <div>
                             <svg class="fill-current text-white inline-block h-6 w-4">
@@ -142,7 +142,7 @@
 	                </h2>                        
                     <p class="leading-relaxed">Don't miss this free-to attend conference  tackling operational challenges in warehousing and logistics  at a time of unprecedented transformation.</p>
                     <div class="mt-6">
-                    	<a href="https://www.eventbrite.co.uk/e/90942221633" class="btn btn-gray" target="_blank">
+                    	<a href="https://www.eventbrite.co.uk/e/90942221633" class="btn btn-gray" target="_blank" rel="noopener">
                             <div>Register now</div>
                             <div>
                                 <svg class="fill-current text-white inline-block h-6 w-4">

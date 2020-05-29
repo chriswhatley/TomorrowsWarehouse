@@ -13,7 +13,7 @@
 
 	                <div class="flex items-start mt-3">
 	                    <div class="inline-block w-4 h-4 mr-3 pt-1">
-	                       <img src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" class="lazyload" />
+	                       <img src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" class="lazyload" alt="Calendar Icon" />
 	                    </div>
 	                    <div class="w-full  text-white tracking-tight">
 	                        Wednesday 9<sup>th</sup> June 2021
@@ -22,7 +22,7 @@
 
 	                <div class="flex items-start mt-2"> 
 	                    <div class="inline-block w-4 h-4 mr-3 pt-1">
-	                       <img src="{{ $page->resourcePath('/assets/img/icons/clock-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/clock-icon.svg') }}" class="lazyload" />
+	                       <img src="{{ $page->resourcePath('/assets/img/icons/clock-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/clock-icon.svg') }}" class="lazyload" alt="Clock Icon" />
 	                    </div>
 	                    <div class="w-full text-lg lg:text-base text-white tracking-tight">
 	                        09:00 - 17:00
@@ -37,7 +37,7 @@
 
 	                <div class="flex items-start mt-3">
 	                	<div class="inline-block w-4 h-4 mr-3 pt-1">
-	                		<img src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" class="lazyload" />
+	                		<img src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" class="lazyload" alt="Home Icon" />
 	                	</div>
 	                	<div class="w-full text-white tracking-tight">
 	                		Ricoh Arena<br />
@@ -136,7 +136,7 @@
 	                    </svg>
 	                </div>
 	                <div class="footer-link">
-	                    <a href="https://www.eventbrite.co.uk/e/90942221633" target="_blank">Register</a>
+	                    <a href="https://www.eventbrite.co.uk/e/90942221633" target="_blank" rel="noopener">Register</a>
 	                </div>                        
 	            </div>
 	        </div> 
@@ -144,12 +144,11 @@
 	        <div class="w-full lg:w-1/3 px-6 pt-12">                
 	        	<div class="max-w-sm">
 	        		<img src="{{ $page->resourcePath('/assets/img/wbm-logo-compressed.png') }}" alt="Western Business Media Limited">
-	        		
 	        	</div>
 	            
 	            <div class="flex items-start mt-8">
 	                <div class="inline-block w-4 h-4 mr-3 pt-1">
-	                   <img src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" class="lazyload" />
+	                   <img src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" class="lazyload" alt="Home Icon" />
 	                </div>
 	                <div class="w-full text-white tracking-tight">
 	                    Dorset House, 64 High Street,<br />
@@ -159,7 +158,7 @@
 	            
 	            <div class="flex w-1/2 items-start mt-6">
 	                <div class="inline-block w-4 h-4 mr-3 pt-1">
-	                   <img src="{{ $page->resourcePath('/assets/img/icons/phone-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/phone-icon.svg') }}" class="lazyload" />
+	                   <img src="{{ $page->resourcePath('/assets/img/icons/phone-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/phone-icon.svg') }}" class="lazyload" alt="Phone Icon" />
 	                </div>
 	                <div class="w-full text-white tracking-tight">
 	                    <a class="footer-link" href="tel:+441342314300">01342 314 300</a>
@@ -168,7 +167,7 @@
 
 	            <div class="flex items-start">
 	                <div class="inline-block w-4 h-4 mr-3 pt-2">
-	                   <img src="{{ $page->resourcePath('/assets/img/icons/email-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/email-icon.svg') }}" class="lazyload" />
+	                   <img src="{{ $page->resourcePath('/assets/img/icons/email-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/email-icon.svg') }}" class="lazyload" alt="Email Icon" />
 	                </div>
 	                <div class="w-full text-white tracking-tight">
 	                    <a href="mailto:admin@westernbusiness.media" class="footer-link">admin@westernbusiness.media</a>
@@ -182,10 +181,10 @@
 
 	                <div class="flex items-start mt-3">
 	                	<div class="flex w-full text-white tracking-tight">
-	                		<a class="flex w-8" href="https://www.linkedin.com/company/tomorrows-warehouse" target="_blank">
+	                		<a class="flex w-8" href="https://www.linkedin.com/company/tomorrows-warehouse" target="_blank" rel="noopener">
 			                   <img src="{{ $page->resourcePath('/assets/img/icons/linkedin-icon.svg') }}" alt="LinkedIn">
 			                </a>
-			                <a class="flex w-8 ml-2" href="https://twitter.com/TmrwsWarehouse" target="_blank">
+			                <a class="flex w-8 ml-2" href="https://twitter.com/TmrwsWarehouse" target="_blank" rel="noopener">
 			                    <img src="{{ $page->resourcePath('/assets/img/icons/twitter-icon.svg') }}" alt="Twitter">
 			                </a>
 	                	</div>

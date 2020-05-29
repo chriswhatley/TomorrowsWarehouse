@@ -44,7 +44,7 @@
 }
 
 .btn-gray:visited {
-	@apply bg-gray-600
+	@apply bg-gray-700
 }
 
 .btn {
@@ -68,11 +68,11 @@
 }
 
 .btn-gray {
-	@apply bg-gray-600 
+	@apply bg-gray-700 
 }
 
 .btn-gray:hover {
-	@apply bg-gray-800
+	@apply bg-gray-600
 }
 
 .exhibitor-profile ul {

@@ -56,7 +56,7 @@
             </div>  
 
             <a class="nav-item md:mt-0 md:ml-4 {{ isSet($nav_selector) && $nav_selector == 'seminars' ? 'selected' : '' }}" href="{{ $page->resourcePath('/seminars') }}">Seminars</a>
-            <a class="nav-item md:mt-0 md:ml-4" href="{{ $page->registrationURL }}" target="_blank">Register</a> 
+            <a class="nav-item md:mt-0 md:ml-4" href="{{ $page->registrationURL }}" target="_blank" rel="noopener">Register</a> 
         </nav>
     {{-- </div> --}}
    
