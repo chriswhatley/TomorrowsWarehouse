@@ -181,10 +181,10 @@
 
 	                <div class="flex items-start mt-3">
 	                	<div class="flex w-full text-white tracking-tight">
-	                		<a class="flex w-8 border" href="https://www.linkedin.com/company/tomorrows-warehouse" target="_blank" rel="noopener">
+	                		<a class="h-8 w-8" href="https://www.linkedin.com/company/tomorrows-warehouse" target="_blank" rel="noopener">
 			                   <img src="{{ $page->resourcePath('/assets/img/icons/linkedin-icon.svg') }}" alt="LinkedIn">
 			                </a>
-			                <a class="flex w-8 ml-2 border" href="https://twitter.com/TmrwsWarehouse" target="_blank" rel="noopener">
+			                <a class="h-8 w-8 ml-2" href="https://twitter.com/TmrwsWarehouse" target="_blank" rel="noopener">
 			                    <img src="{{ $page->resourcePath('/assets/img/icons/twitter-icon.svg') }}" alt="Twitter">
 			                </a>
 	                	</div>
