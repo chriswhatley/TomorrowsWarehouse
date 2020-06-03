@@ -30,12 +30,22 @@
 }
 
 /* Footer Nav Items*/
+.footer-link-icon {
+	@apply inline-block w-4 h-4 mr-3 pt-2
+}
+
 .footer-link {
-	@apply inline-block mb-1 text-white transition duration-300 ease-in-out tracking-tight
+	@apply inline-block mb-1 px-3 py-2 text-white transition duration-300 ease-in-out tracking-tight
 }
 
 .footer-link:hover {
 	@apply text-red-600
+}
+
+@screen md {
+	.footer-link {
+		@apply p-1
+	}
 }
 
 /* Buttons */

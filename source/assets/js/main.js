@@ -104,7 +104,9 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+document.addEventListener('touchstart', onTouchStart, {
+  passive: true
+});
 
 /***/ }),
 
