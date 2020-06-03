@@ -5,7 +5,7 @@
     </head>
     <body class="antialiased font-sans">
         
-        <section class="text-white bg-gray-900 bg-center bg-cover lg:bg-fixed" style="background-image: url({{ $page->resourcePath('/assets/img/hero-2-no-overlay-compressed.jpg') }});">  
+        <section class="text-white bg-gray-900 bg-center bg-cover xl:bg-fixed" style="background-image: url({{ $page->resourcePath('/assets/img/hero-2-no-overlay-compressed.jpg') }});">  
      
             <div class="absolute w-full z-50" x-data="{ open: false }">
                 <div class="fixed w-full pb-4 bg-gray-900 shadow-lg">

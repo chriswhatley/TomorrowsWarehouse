@@ -63,7 +63,7 @@
         		</div>
         </section>
 
-        <section class="text-white bg-gray-900 bg-bottom bg-cover md:bg-fixed" style="background-image: url(assets/img/feature-2-compressed.jpg);">  
+        <section class="text-white bg-gray-900 bg-bottom bg-cover xl:bg-fixed" style="background-image: url(assets/img/feature-2-compressed.jpg);">  
    
             <div class="flex py-12 flex-row flex-col items-center">
                 <h2 class="text-center text-2xl md:text-3xl uppercase font-semibold leading-tight tracking-tight mb-2 font-medium">Tomorrow's Warehouse</h2>

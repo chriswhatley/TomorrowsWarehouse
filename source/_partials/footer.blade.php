@@ -210,7 +210,3 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-<script>
-	// Passive Listener to improve scroll performance
-	document.addEventListener('touchstart', onTouchStart, {passive: true});
-</script>
