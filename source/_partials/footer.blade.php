@@ -143,7 +143,7 @@
 
 	        <div class="w-full lg:w-1/3 px-6 pt-12">                
 	        	<div class="max-w-sm">
-	        		<img src="{{ $page->resourcePath('/assets/img/wbm-logo-compressed.png') }}" alt="Western Business Media Limited">
+	        		<img src="{{ $page->resourcePath('/assets/img/layout/wbm-logo-compressed.png') }}" alt="Western Business Media Limited">
 	        	</div>
 	            
 	            <div class="flex items-start mt-8">
@@ -210,3 +210,4 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="{{ $page->baseUrl }}/assets/js/main.js"></script>

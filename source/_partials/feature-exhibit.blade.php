@@ -3,7 +3,7 @@
 
 		<div class="w-full md:w-1/3 flex flex-col p-3">
 			<div class="bg-gray-800 overflow-hidden flex-1 flex flex-col rounded">
-				<div class="bg-cover h-48" style="background-image: url({{ $page->resourcePath('/assets/img/factory-1-compressed.jpg') }});"></div>
+				<div class="feature-exhibit-media-pack bg-cover h-48"></div>
 				<div class="p-4 flex-1 flex flex-col" style="">
 					<div class="mb-4 flex-1">
 						<h3 class="pb-4 text-md md:text-lg font-bold leading-tight uppercase tracking-tight">Find out more about sponsorship &amp; exhibiting at Tomorrow's Warehouse</h3>
@@ -22,7 +22,7 @@
 
 		<div class="w-full md:w-1/3 flex flex-col p-3">
 			<div class="bg-gray-600 overflow-hidden flex-1 flex flex-col rounded">
-				<div class="bg-cover h-48" style="background-image: url({{ $page->resourcePath('/assets/img/network-1-compressed.jpg') }});"></div>
+				<div class="feature-exhibit-exhibitor-list bg-cover h-48"></div>
 				<div class="p-4 flex-1 flex flex-col" style="">
 					<div class="mb-4 flex-1">
 						<h3 class="pb-4 text-md md:text-lg font-bold leading-tight uppercase tracking-tight">Find out which leading manufacturers &amp; suppliers are exhibiting at Tomorrow's Warehouse</h3>
@@ -41,7 +41,7 @@
 
 		<div class="w-full md:w-1/3 flex flex-col p-3">
 			<div class="bg-gray-800 overflow-hidden flex-1 flex flex-col rounded">
-				<div class="bg-cover h-48" style="background-image: url({{ $page->resourcePath('/assets/img/register-2-compressed.jpg')  }});"></div>
+				<div class="feature-exhibit-contact bg-cover h-48"></div>
 				<div class="p-4 flex-1 flex flex-col" style="">
 					<div class="mb-4 flex-1">
 						<h3 class="pb-4 text-md md:text-lg font-bold leading-tight uppercase tracking-tight">Find out more about how Tomorrow's Warehouse can benefit your company</h3>

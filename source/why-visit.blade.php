@@ -33,7 +33,7 @@
                 </div>
     		</div>
 
-    		<div class="hidden md:block md:w-1/2 bg-center bg-cover rounded overflow-hidden" style="background-image: url({{ $page->resourcePath('/assets/img/why-visit-1-compressed.jpg') }})"></div>
+    		<div class="why-visit hidden md:block md:w-1/2 bg-center bg-cover rounded overflow-hidden"></div>
 		</div>
 	</div>
 	

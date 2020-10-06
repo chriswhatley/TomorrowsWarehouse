@@ -8,12 +8,12 @@
     "watch": "npm run local -- --watch"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "browser-sync-webpack-plugin": "^2.2.2",
     "cross-env": "^7.0.2",
     "extra-watch-webpack-plugin": "^1.0.3",
     "hasbin": "^1.2.3",
-    "laravel-mix": "^5.0.4",
+    "laravel-mix": "^5.0.5",
     "laravel-mix-purgecss": "^4.2.0",
     "node-cmd": "^3.0.0",
     "postcss-import": "^12.0.1",
@@ -22,6 +22,8 @@
     "yargs": "^15.3.1"
   },
   "dependencies": {
-    "autoprefixer": "^9.7.6"
+    "autoprefixer": "^9.7.6",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0"
   }
 }

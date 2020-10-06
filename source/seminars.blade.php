@@ -11,8 +11,8 @@
 				<div class="flex flex-wrap my-1 md:my-8 text-white"> 
 
 					<div class="order-1 w-full md:w-1/2 flex flex-col p-3">
-						<div class="bg-gray-800 overflow-hidden flex-col lg:flex lg:flex-row">
-							<div class="bg-cover bg-left w-full h-32 order-1 flex flex-col lg:w-1/3 lg:h-auto lg:order-2" style="background-image: url({{ $page->resourcePath('/assets/img/feature-2-no-overlay-compressed.jpg') }});">
+						<div class="bg-gray-800 overflow-hidden flex-col lg:flex lg:flex-row rounded">
+							<div class="seminars-automation bg-cover bg-left w-full h-32 order-1 flex flex-col lg:w-1/3 lg:h-auto lg:order-2">
 							</div>
 							<div class="order-2 w-full flex flex-col p-6 lg:w-2/3 lg:order-1">
 								<h3 class="text-md md:text-lg font-bold leading-tight uppercase tracking-tight">AUTOMATION:</h3>
@@ -25,8 +25,8 @@
 					</div>
 
 					<div class="order-2 w-full md:w-1/2 flex flex-col p-3">
-						<div class="h-full bg-gray-600 overflow-hidden flex-col lg:flex lg:flex-row">
-							<div class="bg-cover bg-center w-full h-32 order-1 flex flex-col lg:w-1/3 lg:h-auto lg:order-2 lg:bg-right-bottom" style="background-image: url({{ $page->resourcePath('/assets/img/storage-1-compressed.jpg') }});">
+						<div class="h-full bg-gray-600 overflow-hidden flex-col lg:flex lg:flex-row rounded">
+							<div class="seminars-future-storage bg-cover bg-center w-full h-32 order-1 flex flex-col lg:w-1/3 lg:h-auto lg:order-2 lg:bg-right-bottom">
 							</div>
 							<div class="order-2 w-full flex flex-col p-6 lg:w-2/3 lg:order-1">
 								<h3 class="text-md md:text-lg font-bold leading-tight uppercase tracking-tight">THE FUTURE OF STORAGE:</h3>
@@ -39,8 +39,8 @@
 					</div>
 
 					<div class="order-3 md:order-4 w-full md:w-1/2 flex flex-col p-3">
-						<div class="h-full bg-gray-800 overflow-hidden flex-col lg:flex lg:flex-row">
-							<div class="bg-cover bg-bottom w-full h-32 order-1 flex flex-col lg:w-1/3 lg:h-auto lg:order-2" style="background-image: url({{ $page->resourcePath('/assets/img/robotics-1-compressed.jpg') }});">
+						<div class="h-full bg-gray-800 overflow-hidden flex-col lg:flex lg:flex-row rounded">
+							<div class="seminars-robotics bg-cover bg-bottom w-full h-32 order-1 flex flex-col lg:w-1/3 lg:h-auto lg:order-2">
 							</div>
 							<div class="order-2 w-full flex flex-col p-6 lg:w-2/3 lg:order-1">
 								<h3 class="text-md md:text-lg font-bold leading-tight uppercase tracking-tight">ROBOTICS:</h3>
@@ -52,8 +52,8 @@
 					</div>
 
 					<div class="order-4 md:order-3 w-full md:w-1/2 flex flex-col p-3">
-						<div class="bg-gray-600 overflow-hidden flex-col lg:flex lg:flex-row">
-							<div class="bg-cover bg-center w-full h-32 order-1 flex flex-col lg:w-1/3 lg:h-auto lg:order-2" style="background-image: url({{ $page->resourcePath('/assets/img/forklift-1-compressed.jpg') }});">
+						<div class="bg-gray-600 overflow-hidden flex-col lg:flex lg:flex-row rounded">
+							<div class="seminars-future-forklift bg-cover bg-center w-full h-32 order-1 flex flex-col lg:w-1/3 lg:h-auto lg:order-2">
 							</div>
 							<div class="order-2 w-full flex flex-col p-6 lg:w-2/3 lg:order-1">
 								<h3 class="text-md md:text-lg font-bold leading-tight uppercase tracking-tight">THE FUTURE OF THE FORKLIFT:</h3>
@@ -65,9 +65,9 @@
 						</div>  
 					</div>
 
-					<div class="order-5 w-full flex flex-col mx-3 mt-3 p-6 bg-red-500 text-white font-semibold text-center">
-						<p>Interested in being a part of the Tomorrow’s Warehouse seminar programme as a speaker?</p>
-						<div class="mt-6">
+					<div class="order-5 w-full flex flex-col mx-3 mt-3 p-6 bg-red-500 text-white font-semibold text-center rounded">
+						<p class="text-xl">Interested in being a part of the Tomorrow’s Warehouse seminar programme as a speaker?</p>
+						<div class="my-2">
 			            	<a href="{{ $page->resourcePath('/contact') }}" class="btn btn-gray">
 			                    <div>Get in touch</div>
 			                    <div>

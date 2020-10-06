@@ -645,17 +645,13 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.nav-item.selected,
-.nav-item:hover {
-  border-color: #e53e3e
-}
-
 .nav-item:visited {
   color: #fff;
   border-color: #1a202c
 }
 
-.nav-item.selected {
+.nav-item.selected,
+.nav-item:hover {
   border-color: #e53e3e
 }
 
@@ -781,6 +777,170 @@ video {
 
 p {
   margin-bottom: 1rem
+}
+
+.hero, .feature-1 {
+  background-blend-mode: soft-light;
+}
+
+.webp .hero {
+  background-image: url(../../assets/img/layout/tomorrows-warehouse-hero-3.webp);
+}
+
+.no-webp .hero  {
+  background-image: url(../../assets/img/layout/tomorrows-warehouse-hero-3-compressed.jpg);
+}
+
+.webp .intro {
+  background-image: url(../../assets/img/layout/intro-2-compressed.webp);
+}
+
+.no-webp .intro {
+  background-image: url(../../assets/img/layout/intro-2-compressed.jpg);
+}
+
+.webp .home-why-visit {
+  background-image: url(../../assets/img/layout/why-visit-1-compressed.webp);
+}
+
+.no-webp .home-why-visit {
+  background-image: url(../../assets/img/layout/why-visit-1-compressed.jpg);
+}
+
+.webp .home-why-exhibit {
+  background-image: url(../../assets/img/layout/why-exhibit-1-compressed.webp);
+}
+
+.no-webp .home-why-exhibit {
+  background-image: url(../../assets/img/layout/why-exhibit-1-compressed.jpg);
+}
+
+.webp .feature-1 {
+  background-image: url(../../assets/img/layout/feature-3-compressed.webp);
+}
+
+.no-webp .feature-1 {
+  background-image: url(../../assets/img/layout/feature-3-compressed.jpg);
+}
+
+.webp .home-register {
+  background-image: url(../../assets/img/layout/register-2-compressed.webp);
+}
+
+.no-webp .home-register {
+  background-image: url(../../assets/img/layout/register-2-compressed.jpg);
+}
+
+.webp .parallax-visit {
+  background-image: url(../../assets/img/layout/feature-3-compressed.webp);
+}
+
+.no-webp .parallax-visit {
+  background-image: url(../../assets/img/layout/feature-3-compressed.jpg);
+}
+
+.webp .parallax-exhibit {
+  background-image: url(../../assets/img/layout/feature-4-compressed.webp);
+}
+
+.no-webp .parallax-exhibit {
+  background-image: url(../../assets/img/layout/feature-4-compressed.jpg);
+}
+
+.webp .feature-visit-exhibitors {
+  background-image: url(../../assets/img/layout/factory-1-compressed.webp);
+}
+
+.no-webp .feature-visit-exhibitors {
+  background-image: url(../../assets/img/layout/factory-1-compressed.jpg);
+}
+
+.webp .feature-visit-seminars {
+  background-image: url(../../assets/img/layout/conference-1-compressed.webp);
+}
+
+.no-webp .feature-visit-seminars {
+  background-image: url(../../assets/img/layout/conference-1-compressed.jpg);
+}
+
+.webp .feature-visit-register {
+  background-image: url(../../assets/img/layout/why-exhibit-1-compressed.webp);
+}
+
+.no-webp .feature-visit-register {
+  background-image: url(../../assets/img/layout/why-exhibit-1-compressed.jpg);
+}
+
+.webp .feature-exhibit-media-pack {
+  background-image: url(../../assets/img/layout/factory-1-compressed.webp);
+}
+
+.no-webp .feature-exhibit-media-pack {
+  background-image: url(../../assets/img/layout/factory-1-compressed.jpg);
+}
+
+.webp .feature-exhibit-exhibitor-list {
+  background-image: url(../../assets/img/layout/network-1-compressed.webp);
+}
+
+.no-webp .feature-exhibit-exhibitor-list {
+  background-image: url(../../assets/img/layout/network-1-compressed.jpg);
+}
+
+.webp .feature-exhibit-contact {
+  background-image: url(../../assets/img/layout/register-2-compressed.webp);
+}
+
+.no-webp .feature-exhibit-contact {
+  background-image: url(../../assets/img/layout/register-2-compressed.jpg);
+}
+
+.webp .why-visit {
+  background-image: url(../../assets/img/layout/why-visit-1-compressed.webp);
+}
+
+.no-webp .why-visit {
+  background-image: url(../../assets/img/layout/why-visit-1-compressed.jpg);
+}
+
+.webp .why-exhibit {
+  background-image: url(../../assets/img/layout/why-exhibit-1-compressed.webp);
+}
+
+.no-webp .why-exhibit {
+  background-image: url(../../assets/img/layout/why-exhibit-1-compressed.jpg);
+}
+
+.webp .seminars-automation {
+  background-image: url(../../assets/img/layout/feature-2-no-overlay-compressed.webp);
+}
+
+.no-webp .seminars-automation {
+  background-image: url(../../assets/img/layout/feature-2-no-overlay-compressed.jpg);
+}
+
+.webp .seminars-future-storage {
+  background-image: url(../../assets/img/layout/storage-1-compressed.webp);
+}
+
+.no-webp .seminars-future-storage {
+  background-image: url(../../assets/img/layout/storage-1-compressed.jpg);
+}
+
+.webp .seminars-robotics {
+  background-image: url(../../assets/img/layout/robotics-1-compressed.webp);
+}
+
+.no-webp .seminars-robotics {
+  background-image: url(../../assets/img/layout/robotics-1-compressed.jpg);
+}
+
+.webp .seminars-future-forklift {
+  background-image: url(../../assets/img/layout/forklift-1-compressed.webp);
+}
+
+.no-webp .seminars-future-forklift {
+  background-image: url(../../assets/img/layout/forklift-1-compressed.jpg);
 }
 
 .sr-only {
