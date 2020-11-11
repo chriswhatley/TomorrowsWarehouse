@@ -800,11 +800,11 @@ p {
 }
 
 .webp .home-why-visit {
-  background-image: url(../../assets/img/layout/why-visit-1-compressed.webp);
+  background-image: url(../../assets/img/layout/why-visit-2-compressed.webp);
 }
 
 .no-webp .home-why-visit {
-  background-image: url(../../assets/img/layout/why-visit-1-compressed.jpg);
+  background-image: url(../../assets/img/layout/why-visit-2-compressed.jpg);
 }
 
 .webp .home-why-exhibit {
@@ -848,11 +848,11 @@ p {
 }
 
 .webp .feature-visit-exhibitors {
-  background-image: url(../../assets/img/layout/factory-1-compressed.webp);
+  background-image: url(../../assets/img/layout/factory-2-compressed.webp);
 }
 
 .no-webp .feature-visit-exhibitors {
-  background-image: url(../../assets/img/layout/factory-1-compressed.jpg);
+  background-image: url(../../assets/img/layout/factory-2-compressed.jpg);
 }
 
 .webp .feature-visit-seminars {
@@ -872,11 +872,11 @@ p {
 }
 
 .webp .feature-exhibit-media-pack {
-  background-image: url(../../assets/img/layout/factory-1-compressed.webp);
+  background-image: url(../../assets/img/layout/robotics-2-compressed.webp);
 }
 
 .no-webp .feature-exhibit-media-pack {
-  background-image: url(../../assets/img/layout/factory-1-compressed.jpg);
+  background-image: url(../../assets/img/layout/robotics-2-compressed.jpg);
 }
 
 .webp .feature-exhibit-exhibitor-list {
@@ -896,11 +896,11 @@ p {
 }
 
 .webp .why-visit {
-  background-image: url(../../assets/img/layout/why-visit-1-compressed.webp);
+  background-image: url(../../assets/img/layout/why-visit-3-compressed.webp);
 }
 
 .no-webp .why-visit {
-  background-image: url(../../assets/img/layout/why-visit-1-compressed.jpg);
+  background-image: url(../../assets/img/layout/why-visit-3-compressed.jpg);
 }
 
 .webp .why-exhibit {
@@ -928,11 +928,11 @@ p {
 }
 
 .webp .seminars-robotics {
-  background-image: url(../../assets/img/layout/robotics-1-compressed.webp);
+  background-image: url(../../assets/img/layout/robotics-2-compressed.webp);
 }
 
 .no-webp .seminars-robotics {
-  background-image: url(../../assets/img/layout/robotics-1-compressed.jpg);
+  background-image: url(../../assets/img/layout/robotics-2-compressed.jpg);
 }
 
 .webp .seminars-future-forklift {

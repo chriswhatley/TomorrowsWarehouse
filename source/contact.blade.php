@@ -51,7 +51,6 @@
 								</h3>
 								
 								<p class="leading-relaxed"><span class="font-semibold uppercase">Tel : </span><a href="tel:+441342333711" class="transition duration-200 ease-in-out">+44 (0)1342 333711</a></p>
-								<p class="leading-relaxed"><span class="font-semibold uppercase">Mob : </span><a href="tel:+447818574306" class="transition duration-200 ease-in-out">+44 (0)7818 574306</a></p>
 								
 								<div class="mt-6">
 			                    	<a href="mailto:sduddy@westernbusiness.media?Subject=Tomorrow’s Warehouse Seminar Programme Enquiry" class="btn btn-red">

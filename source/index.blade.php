@@ -10,7 +10,7 @@
                     <h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">
 	                    About  <br /> Tomorrow's Warehouse 
 	                </h2>                        
-                    <p class="leading-relaxed">Tomorrow's Warehouse is a one-day, free-to attend conference  tackling operational challenges in warehousing and logistics  at a time of unprecedented transformation.</p>
+                    <p class="leading-relaxed">Get a handle on warehouse transformation at this one-day, free-to attend conference. We were already in a time of unprecedented logistics transformation thanks to eCommerce. Now the coronavirus pandemic has made revitalising warehousing and logistics essential.</p>
                     <div class="mt-6">
                     	<a href="{{ $page->registrationURL }}" target="_blank" class="btn btn-red" rel="noopener">
                             <div>Register Now</div>
@@ -34,7 +34,7 @@
 
         			<div class="w-full md:w-1/2 lg:w-1/4 bg-red-500 p-10 md:order-2">
         				<h3 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Why Visit</h3> 
-        				<p class="leading-relaxed">The Tomorrow's Warehouse Event has been launched to tackle the concerns of End Users and Logistics professionals as they face the future in an exciting, dynamic and fast-changing industry.</p>
+        				<p class="leading-relaxed">Attend Tomorrow’s Warehouse to gain practical, actionable insights that will help you make sure operations are a match for changing commercial realities.</p>
         				<a href="{{ $page->resourcePath('/why-visit') }}" class="btn btn-gray mt-10">
         					<div>Find Out More</div>
         					<div>
@@ -49,7 +49,7 @@
         			
         			<div class="w-full md:w-1/2 lg:w-1/4 bg-gray-800 p-10 md:order-3 lg:order-4">
         				<h3 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Why Exhibit</h3> 
-        				<p class="leading-relaxed">Secure your company's opportunity to engage with Warehouse, Logistics, Distribution, Operations, Production & Facilities Managers &amp; Directors, together with Buyers and Health &amp; Safety professionals looking to make informed decisions for their logistical processes.</p>
+        				<p class="leading-relaxed">Exhibit to access operations professionals who are seeking insights and solutions to boost their logistics processes in times of rapid and deep transformation.</p>
         				<a href="{{ $page->resourcePath('/why-exhibit') }}" class="btn btn-red mt-10">
         					<div>Find Out More</div>
         					<div>

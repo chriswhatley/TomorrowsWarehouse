@@ -20,7 +20,7 @@
 				</div>
 				
 				<p class="mt-4 leading-relaxed">The Tomorrow's Warehouse Event has been launched to tackle the concerns of End Users and Logistics Professionals as they face the future in an exciting, dynamic and fast-changing industry.</p>
-				<p class="mt-4 leading-relaxed">We have surveyed our readers annually to uncover the challenges they face, including restricted warehouse space, a need to boost picking operations, and a shallower pool of labour, to name just a few. The event will pull managers and experts together to give them takeaways and answers that can have real practical benefits.</p>
+				<p class="mt-4 leading-relaxed">In response to the pandemic and the rise of eCommerce managers in charge of warehouse and logistics operations are facing a myriad of challenges and pressure for change. But change doesn’t always mean re-inventing the wheel. The Event will pull experts together to share experience and best practice and give attendees takeaways that have real practical benefits.</p>
 				<div class="mt-6">
                 	<a href="{{ $page->registrationURL }}" target="_blank" class="btn btn-red">
                         <div>Register Now</div>
