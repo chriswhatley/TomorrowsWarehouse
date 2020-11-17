@@ -15,10 +15,10 @@
 		<meta name="twitter:site" content="@HSSmagazine">
 		<meta name="twitter:title" content="{{ $meta_title }}">
 		<meta name="twitter:description" content="{{ $meta_description }}">
-		<meta name="twitter:image" content="{{ $page->resourcePath('/assets/img/twitter-card-large.png') }}">
+		<meta name="twitter:image" content="{{ $page->resourcePath('/assets/img/layout/twitter-card-large.png') }}">
 		<meta name="twitter:creator" content="@HSSmagazine">
 		<meta property="og:url" content="{{ trim($page->baseUrl, '/') }}" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="{{ $meta_title }}" />
 		<meta property="og:description" content="{{ $meta_description }}" />
-		<meta property="og:image" content="{{ $page->resourcePath('/assets/img/twitter-card-large.png') }}" />
+		<meta property="og:image" content="{{ $page->resourcePath('/assets/img/layout/twitter-card-large.png') }}" />
