@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer>
 	<div class="bg-gray-900 pb-6">
-	    <div class="container mx-auto flex flex-wrap bg-no-repeat bg-right-bottom bg-auto">
+	    <div class="container mx-auto flex flex-wrap bg-no-repeat bg-right-bottom bg-contain watermark">
 	        
 	        <div class="w-full md:w-1/2 lg:w-1/3 px-6 pt-8">
 	            <h2 class="text-white text-lg md:text-2xl font-bold leading-tight uppercase tracking-tight">Event Information</h2>

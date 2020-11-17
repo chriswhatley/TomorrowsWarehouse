@@ -675,6 +675,10 @@ video {
 
 /* Footer Nav Items*/
 
+.watermark {
+  background-image: url(../../assets/img/layout/wbm-watermark.svg);
+}
+
 .footer-link-icon {
   display: inline-block;
   width: 1rem;

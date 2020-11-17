@@ -26,6 +26,10 @@
 }
 
 /* Footer Nav Items*/
+.watermark {
+	background-image: url(../../assets/img/layout/wbm-watermark.svg);
+}
+
 .footer-link-icon {
 	@apply inline-block w-4 h-4 mr-3 pt-2
 }
