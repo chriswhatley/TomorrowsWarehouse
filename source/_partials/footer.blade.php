@@ -16,7 +16,7 @@
 	                       <img src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" class="lazyload" alt="Calendar Icon" />
 	                    </div>
 	                    <div class="w-full text-white tracking-tight">
-	                        Wednesday 9<sup>th</sup> June 2021
+	                        Tuesday 30<sup>th</sup> November 2021
 	                    </div>
 	                </div>                                      
 
@@ -199,7 +199,7 @@
         <div class="container mx-auto w-full px-6 pb-2 text-white text-left uppercase footer">              
             <div class="lg:flex lg:justify-between pt-4 text-sm">
                 <div class="w-full pb-2">
-                    Western Business Media Limited 2020 All Rights Reserved
+                    Western Business Media Limited {{ date('Y') }} All Rights Reserved
                 </div>                    
                 <div class="w-full lg:text-right">
                     <a href="{{ $page->resourcePath('/terms') }}" class="footer-link text-sm">Terms &amp; Conditions</a>  <span class="inline-block mx-2">|</span>  <a href="{{ $page->resourcePath('/privacy') }}" class="footer-link">Privacy &amp; Cookie Policy</a>
