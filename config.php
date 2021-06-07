@@ -7,7 +7,7 @@ return [
     'baseUrl' => 'http://localhost:3000',
     'siteName' => "Tomorrow's Warehouse",
     'siteDescription' => "Tomorrow's Warehouse is a one-day, free-to attend conference tackling operational challenges in warehousing and logistics at a time of unprecedented transformation.",
-    'registrationURL' => 'https://www.eventbrite.co.uk/e/90942221633',
+    'registrationURL' => 'https://form.jotform.com/211403691045346',
     'selected' => function ($page, $section) {
         return Str::contains($page->getPath(), $section) ? 'selected' : '';
     },
