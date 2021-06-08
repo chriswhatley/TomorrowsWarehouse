@@ -8,7 +8,7 @@
             <div class="container mx-auto px-10">
                 <div class="py-12 w-full lg:w-1/2 lg:pr-12">                                                                                          
                     <h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">
-	                    About  <br /> Tomorrow's Warehouse 
+	                    About <br /> Tomorrow's Warehouse
 	                </h2>                        
                     <p class="leading-relaxed">Get a handle on warehouse transformation at this one-day, free-to attend conference. We were already in a time of unprecedented logistics transformation thanks to eCommerce. Now the coronavirus pandemic has made revitalising warehousing and logistics essential.</p>
                     <div class="mt-6">

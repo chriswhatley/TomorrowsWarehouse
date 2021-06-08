@@ -1,7 +1,7 @@
 <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row">
     <div class="p-2 flex flex-row items-center justify-between">
         <a href="{{ $page->baseUrl }}" class="">
-            <img class="pt-4 h-auto w-56 lg:w-96" src="{{ $page->resourcePath('/assets/img/layout/tomorrows-warehouse-2021-logo-header.svg') }}" alt="{{ $page->siteName }}">
+            <img class="pt-4 h-auto w-56 lg:w-96" src="{{ $page->resourcePath('/assets/img/layout/tomorrows-warehouse-logo.svg') }}" alt="{{ $page->siteName }}">
         </a>
         <button aria-label="Small screen navigation" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline-none" @click="open = !open">
             <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
