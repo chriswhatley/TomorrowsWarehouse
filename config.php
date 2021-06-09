@@ -15,10 +15,10 @@ return [
     	return trim($page->baseUrl, '/') . $resourcePath;
     },
     'collections' => [
-        'exhibitors' => [
-            'exhibitor' => 'Exhibitor Name', // Default exhibitor name, if not provided in an exhibitor profile
-            'sort' => 'name',
-            'path' => 'exhibitors/{filename}',
+        'supporters' => [
+            'supporter' => 'Supporter Name', // Default supporter name, if not provided in an supporter profile
+            'sort' => 'sort_order',
+            'path' => 'supporter/{filename}',
         ],
     ],
 ];

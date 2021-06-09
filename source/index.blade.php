@@ -67,7 +67,7 @@
    
             <div class="flex py-12 flex-row flex-col items-center">
                 <h2 class="text-center text-2xl md:text-3xl lg:text-4xl uppercase font-semibold leading-tight tracking-tight mb-2 font-medium">Tomorrow's Warehouse</h2>
-                <p class="w-full text-center text-md md:text-lg leading-relaxed font-semibold uppercase">9<span class="text-xs lowercase">th</span> June 2021 <br class="block md:hidden"> <span class="hidden md:inline-block"> - </span> Ricoh Arena, Coventry</p>
+                <p class="w-full text-center text-md md:text-lg leading-relaxed font-semibold uppercase">30<span class="text-xs lowercase">th</span> November 2021 <br class="block md:hidden"> <span class="hidden md:inline-block"> - </span> Ricoh Arena, Coventry</p>
 
                 <div class="flex flex-wrap w-full md:w-auto">
 
@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="mt-4">
-                    <a href="{{ $page->registrationURL }}" class="btn btn-red" rel="noopener">
+                    <a href="{{ $page->registrationURL }}" class="btn btn-red" rel="noopener" target="_blank">
                         <div>Register Now</div>
                         <div>
                             <svg class="fill-current text-white inline-block h-6 w-4">
@@ -129,7 +129,7 @@
             </div>
         </section>
 
-       @include('_partials/sponsors')
+       @include('_partials/supporters')
 
         <section class="relative bg-red-500 bg-no-repeat bg-center lg:bg-left bg-contain text-white">      
             <div class="home-register hidden md:block absolute top-0 left-0 h-full w-1/2 bg-cover bg-center"></div>                                                                 
@@ -139,9 +139,9 @@
                     <h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">
 	                    Register Your Interest
 	                </h2>                        
-                    <p class="leading-relaxed">Don't miss this free-to attend conference  tackling operational challenges in warehousing and logistics  at a time of unprecedented transformation.</p>
+                    <p class="leading-relaxed">Don't miss this free-to attend conference tackling operational challenges in warehousing and logistics at a time of unprecedented transformation.</p>
                     <div class="mt-6">
-                    	<a href="https://www.eventbrite.co.uk/e/90942221633" class="btn btn-gray" target="_blank" rel="noopener">
+                    	<a href="{{ $page->registrationURL }}" class="btn btn-gray" target="_blank" rel="noopener">
                             <div>Register now</div>
                             <div>
                                 <svg class="fill-current text-white inline-block h-6 w-4">

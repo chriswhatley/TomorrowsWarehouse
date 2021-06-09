@@ -13,11 +13,11 @@
         <div class="flex flex-wrap py-6 md:py-10 px-4">
 
             <div>
-                <a class="text-xs uppercase" href="{{ $page->resourcePath('/exhibitors') }}" title="Return to exhibitor list">
+                <a class="text-xs uppercase" href="{{ $page->resourcePath('/supporters') }}" title="Return to exhibitor list">
                     <svg class="transform rotate-180 fill-current inline-block h-5 w-4">
                         <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
                     </svg>
-                    <span class="-ml-1">Back to Exhibitor List</span>
+                    <span class="-ml-1">Back to Supporters &amp; Partners List</span>
                 </a>
             </div>
 
@@ -29,7 +29,10 @@
 
             <div class="w-full mt-6 md:mt-4 md:w-1/3 order-1 md:order-2">
             	<div class="p-6 bg-gray-800 rounded text-white">
-            		<div class="text-2xl font-bold uppercase">Stand No : {{ $page->stand_number }}</div>
+            		@if($page->partner_status)
+                        <div class="text-xl font-bold uppercase">{{ $page->partner_status }}</div>
+                    @endif  
+
                     <div class="mt-3">
                         <span class="block text-sm font-bold uppercase">{{ $page->name }}</span>
                     </div>
@@ -37,9 +40,13 @@
 	            		<span class="block text-sm font-bold uppercase">Address</span>
 	            		{{ $page->address }}
 	            	</div>
-	            	<div class="mt-3">
-	            		<span class="block text-sm font-bold uppercase">Website</span>
-	            		<a href="{{ $page->website }}" target="_blank">{{ $page->website }}</a>
+	            	<div class="mt-6">
+	            		<a class="btn btn-red" href="{{ $page->website }}" title="Visit {{ $page->name }} website" target="_blank">                      
+                            Visit website
+                            <svg class="fill-current text-white inline-block h-6 w-4">
+                                <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
+                            </svg>
+                        </a>
 	            	</div>
             	</div>     	
             </div>
