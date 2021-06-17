@@ -15,11 +15,11 @@
 
                 @foreach($seminars as $seminar)
                     
-                        <div class="col-span-2 {{ $seminar->class == 'intermission' ? 'bg-teal-500' : 'bg-red-500' }} rounded-t-lg md:rounded-t-none md:rounded-l-lg px-4 py-2 flex justify-center items-center text-xl text-white font-bold tracking-tighter leading-snug uppercase">
+                        <div class="col-span-2 {{ $seminar->class == 'intermission' ? 'bg-blue-500' : 'bg-red-500' }} rounded-t-lg md:rounded-t-none md:rounded-l-lg px-4 py-2 flex justify-center items-center text-xl text-white font-bold tracking-tighter leading-snug uppercase">
                             {{ $seminar->time_slot }}
                         </div>
 
-                        <div class="mb-6 md:mb-0 flex flex-wrap items-center col-span-10 rounded-b-lg md:rounded-b-none md:rounded-r-lg {{ $seminar->class == 'intermission' ? 'bg-teal-200' : 'bg-red-100' }} px-6 py-4">
+                        <div class="mb-6 md:mb-0 flex flex-wrap items-center col-span-10 rounded-b-lg md:rounded-b-none md:rounded-r-lg {{ $seminar->class == 'intermission' ? 'bg-blue-200' : 'bg-red-100' }} px-6 py-4">
                             <h4 class="w-full font-bold text-xl text-gray-800 tracking-tight uppercase">{{ $seminar->title }}</h4>
 
                             @if($seminar->presented_by)

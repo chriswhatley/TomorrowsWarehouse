@@ -25,7 +25,7 @@ return [
             'speaker',
             'organisation',
             'time_slot' => 'Session Time Slot',
-            'sort' => 'time_slot',
+            'sort' => 'sort_order',
         ],
     ]
 ];

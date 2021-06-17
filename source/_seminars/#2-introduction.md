@@ -1,5 +1,6 @@
 ---
 title: Introduction
+sort_order: 2
 presented_by: Simon Duddy - Editor, Handling & Storage Solutions
 time_slot: 09:20 - 09:30
 ---
