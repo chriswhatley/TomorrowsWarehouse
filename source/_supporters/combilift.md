@@ -2,7 +2,7 @@
 extends: _layouts.supporter
 section: profile_content
 name: Combilift
-sort_order: 2
+sort_order: 5
 partner_status: Conference Programme Sponsor
 address: Combilift Limited, Annahagh, H18 YW81 Monaghan, Ireland
 website: http://www.combilift.com

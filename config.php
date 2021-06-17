@@ -20,5 +20,12 @@ return [
             'sort' => 'sort_order',
             'path' => 'supporter/{filename}',
         ],
-    ],
+        'seminars' => [
+            'title' => 'Session Title',
+            'speaker',
+            'organisation',
+            'time_slot' => 'Session Time Slot',
+            'sort' => 'time_slot',
+        ],
+    ]
 ];

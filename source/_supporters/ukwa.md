@@ -2,8 +2,8 @@
 extends: _layouts.supporter
 section: profile_content
 name: UKWA
-sort_order: 5
-partner_status: Event Partner
+sort_order: 6
+partner_status: Supporter
 address: Suite 210, 1 Northumberland Avenue, Trafalgar Square, London, WC2N 5BW
 website: https://www.ukwa.org.uk/
 description: UKWA is Britain’s leading trade organisation for the logistics sector, with over 800+ members.

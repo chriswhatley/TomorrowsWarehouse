@@ -2,8 +2,8 @@
 extends: _layouts.supporter
 section: profile_content
 name: UKMHA
-sort_order: 6
-partner_status: Event Partner
+sort_order: 7
+partner_status: Supporter
 address: UK Material Handling Association Ltd, 5-7 High Street, Sunninghill, Ascot, Berkshire, SL5 9NQ
 website: https://www.ukmha.org.uk/
 description: The UKMHA is a not-for-profit organisation representing all aspects of the UK's material handling industry, including manufacturers, suppliers, dealers and other stakeholders. 
