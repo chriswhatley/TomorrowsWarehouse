@@ -4,4 +4,7 @@
 
 @import "custom";
 
+/* Splide Carousel/Slider - Core CSS (theme styling in 'custom' css file */
+/*@import "../../../node_modules/@splidejs/splide/dist/css/splide.min";*/
+
 @import "tailwindcss/utilities";

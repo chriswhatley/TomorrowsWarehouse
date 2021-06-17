@@ -3,38 +3,24 @@
         <div class="flex px-5 py-12 flex-row flex-col items-center">
             <h2 class="text-xl md:text-2xl uppercase font-semibold leading-tight tracking-tight mb-4 font-medium text-red-500">Sponsors & Partners</h2>
 
-            <div class="flex flex-wrap pb-6">
+            <ul class="mt-6 mb-6 flex ">
 
-                @foreach($supporters as $supporter)
-                    <div class="w-1/3 xl:w-1/6">
-                        <a href="{{ $supporter->getPath() }}">
-                            <img src="{{ $supporter->logo }}" alt="{{ $supporter->name }}" class="w-64">    
-                        </a>
-                    </div>
+                @foreach($supporters as $supporter)   
+                    
+                    {{-- Filter out exhxibitors (only display sponsors/partners, etc.) --}}
+                    @continue($supporter->partner_status == 'Exhibitor')
+                    
+                    <li class="">
+                        <img src="{{ $page->baseUrl . $supporter->logo }}" alt="{{ $supporter->name }}" class="w-48">
+                    </li>
+                    
                 @endforeach
 
-                {{-- <div class="w-1/3 xl:w-1/6">
-                    <img src="assets/img/supporters/swisslog.svg" alt="Swisslog" class="w-56">
-                </div>
-                <div class="w-1/3 xl:w-1/6">
-                    <img src="assets/img/supporters/combilift.svg" alt="Combilift" class="w-56">
-                </div>
-                <div class="w-1/3 xl:w-1/6">
-                    <img src="assets/img/supporters/tgw.svg" alt="TGW" class="w-56">
-                </div>
-                <div class="w-1/3 xl:w-1/6">
-                    <img src="assets/img/supporters/toyota.svg" alt="Toyota Material Handling" class="w-56">
-                </div>
-                <div class="w-1/3 xl:w-1/6">
-                    <img src="assets/img/supporters/ukmha.svg" alt="UKMHA" class="w-56">
-                </div>
-                <div class="w-1/3 xl:w-1/6">
-                    <img src="assets/img/supporters/ukwa.svg" alt="UKWA" class="w-56">
-                </div> --}}
+            </ul>
+            
+            
 
-            </div>
-
-            <div>
+            <div class="mt-4">
                 <a href="supporters" class="btn btn-gray">
                     <div>Find Out More</div>
                     <div>
