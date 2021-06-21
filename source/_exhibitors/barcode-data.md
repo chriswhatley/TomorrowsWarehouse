@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: Bar code Data
 sort_order: 11
@@ -7,8 +7,8 @@ partner_status: Exhibitor
 address: Bar code Data Ltd, Ashton House, 6 Margaret Street, Ashton Under Lyne, Lancashire, OL7 0SH
 website: https://www.barcodedata.co.uk/
 description: Bar Code Data Ltd is a leading provider of barcode solutions, renowned in the UK market place as one of the very best. Our expertise includes barcode scanners, mobile terminals, RFID, label printers and the associated consumables such as labels and ribbons together with label design or bespoke software to offer fully integrated solutions - you can be confident that we can support you and your business.
-logo: /assets/img/supporters/barcodedata.svg
-logo_thumb: /assets/img/supporters/barcodedata.svg
+logo: /assets/img/exhibitors/barcodedata.svg
+logo_thumb: /assets/img/exhibitors/barcodedata.svg
 ---
 Bar Code Data Ltd is a leading provider of barcode solutions, renowned in the UK market place as one of the very best. Our expertise includes barcode scanners, mobile terminals, RFID, label printers and the associated consumables such as labels and ribbons together with label design or bespoke software to offer fully integrated solutions - you can be confident that we can support you and your business.
 

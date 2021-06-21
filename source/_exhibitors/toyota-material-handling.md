@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 sort_order: 4
 name: Toyota Material Handling
@@ -7,8 +7,8 @@ partner_status: Event Partner
 address: Pioneer Way, Castleford, West Yorkshire, WF10 5QG
 website: http://www.toyota-forklifts.co.uk
 description: Toyota Material Handling offers a single point of contact for all your materials handling needs. 
-logo: /assets/img/supporters/toyota.svg
-logo_thumb: /assets/img/supporters/toyota.svg
+logo: /assets/img/exhibitors/toyota.svg
+logo_thumb: /assets/img/exhibitors/toyota.svg
 ---
 
 Toyota Material Handling offers a single point of contact for all your materials handling needs. From a single truck user to large fleet users, we have the products and services to be a strong business partner. Toyota offers a comprehensive range of quality new and used Toyota forklifts and BT warehouse equipment products, national service support, short and long-term rental solutions, fleet management, genuine parts as well as tailored product and safety training

@@ -13,11 +13,11 @@
         <div class="flex flex-wrap py-6 md:py-10 px-4">
 
             <div>
-                <a class="text-xs uppercase" href="{{ $page->resourcePath('/supporters') }}" title="Return to exhibitor list">
+                <a class="text-xs uppercase" href="{{ $page->resourcePath('/exhibitors') }}" title="Return to exhibitor list">
                     <svg class="transform rotate-180 fill-current inline-block h-5 w-4">
                         <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
                     </svg>
-                    <span class="-ml-1">Back to Supporters &amp; Partners List</span>
+                    <span class="-ml-1">Back to Exhibitors List</span>
                 </a>
             </div>
 

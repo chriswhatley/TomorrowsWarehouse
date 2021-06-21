@@ -129,7 +129,7 @@
             </div>
         </section>
 
-       @include('_partials/supporters')
+       @include('_partials/exhibitors')
 
         <section class="relative bg-red-500 bg-no-repeat bg-center lg:bg-left bg-contain text-white">      
             <div class="home-register hidden md:block absolute top-0 left-0 h-full w-1/2 bg-cover bg-center"></div>                                                                 

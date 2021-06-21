@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 sort_order: 3
 name: TGW
@@ -7,8 +7,8 @@ partner_status: Event Partner
 address: Rockingham Rd, Falcon Court, Market Harborough , Leicestershire LE16 7FQ, GB
 website: https://www.tgw-group.com
 description: Since its establishment in 1969, TGW Logistics Group has evolved from a small fitter's shop into a leading international system integrator. 
-logo: /assets/img/supporters/tgw.svg
-logo_thumb: /assets/img/supporters/tgw.svg
+logo: /assets/img/exhibitors/tgw.svg
+logo_thumb: /assets/img/exhibitors/tgw.svg
 ---
 
 Since its establishment in 1969, TGW Logistics Group has evolved from a small fitter's shop into a leading international system integrator. 

@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: Kardex
 sort_order: 14
@@ -7,8 +7,8 @@ partner_status: Exhibitor
 address: Kardex Systems UK Ltd, North Suite, First Floor, Stag House, Old London Road, Hertford, Hertfordshire, SG13 7LA
 website: http://www.kardex-remstar.com
 description: Kardex Remstar is one of the world's leading suppliers of automated storage and retrieval solutions.
-logo: /assets/img/supporters/kardex.svg
-logo_thumb: /assets/img/supporters/kardex.svg
+logo: /assets/img/exhibitors/kardex.svg
+logo_thumb: /assets/img/exhibitors/kardex.svg
 ---
 
 Kardex Remstar is one of the world's leading suppliers of automated storage and retrieval solutions.

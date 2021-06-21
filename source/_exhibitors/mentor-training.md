@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: Mentor Training
 sort_order: 16
@@ -7,8 +7,8 @@ partner_status: Exhibitor
 address: Mentor Training Ltd, Burley Close, Turnoaks Business Park, Chesterfield, Derbyshire, S40 2UB
 website: https://www.mentorflttraining.co.uk/
 description: Mentor FLT Training is the UK's leading provider of forklift truck and safety management training.
-logo: /assets/img/supporters/mentor-training.svg
-logo_thumb: /assets/img/supporters/mentor-training.svg
+logo: /assets/img/exhibitors/mentor-training.svg
+logo_thumb: /assets/img/exhibitors/mentor-training.svg
 ---
 
 Mentor FLT Training is the UK's leading provider of forklift truck and safety management training.

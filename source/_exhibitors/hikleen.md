@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: Hi-Kleen
 sort_order: 2
@@ -7,8 +7,8 @@ partner_status: Sanitising
 address: Hi-Kleen Surface Spray Products, Hi-Line Industries Ltd, Green Street, Burton, Burton-On-Trent, DE14 3RZ, U.K.
 website: https://hi-kleen.com/
 description: Hi-Kleen Room & Surface Sanitising Spray a new product range from Hi-Line Industries, specifically formulated to prevent the spread of Covid-19 on surfaces and areas to kill and inhibit 99.99% of bacteria and other viruses for a minimum of 5 hours protection on a variety of surfaces such as handles, handrails, doors, tables and desks, and other areas, of frequent contact, with a single coating. It is ideal for offices, conference centre's, sports clubs, education, and care facilities, and motor vehicles, as well as entertainment and hospitality venues including restaurants and pubs.
-logo: /assets/img/supporters/hikleen.svg
-logo_thumb: /assets/img/supporters/hikleen.svg
+logo: /assets/img/exhibitors/hikleen.svg
+logo_thumb: /assets/img/exhibitors/hikleen.svg
 ---
 
 Hi-Kleen Room & Surface Sanitising Spray a new product range from Hi-Line Industries, specifically formulated to prevent the spread of Covid-19 on surfaces and areas to kill and inhibit 99.99% of bacteria and other viruses for a minimum of 5 hours protection on a variety of surfaces such as handles, handrails, doors, tables and desks, and other areas, of frequent contact, with a single coating. 

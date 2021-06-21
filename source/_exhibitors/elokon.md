@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: Elokon
 sort_order: 13
@@ -7,8 +7,8 @@ partner_status: Exhibitor
 address: Elokon GmbH, One Victoria Square, Birmingham, West Midlands, B1 2BD
 website: https://www.elokon.com/
 description: At ELOKON, we develop and implement automated safety and driver-assistence-systems or forklifts and other material handling equipment. Our innovative technologies align with the cutting-edge advancements of Industry 4.0. Over 3,000 customers around the world benefit from our solutions - to improve workplace safety and increase material handling productivity. ELOKON is also a leading provider machinery safety engineering, advising multinational corporations on machinery safety issues.
-logo: /assets/img/supporters/elokon.svg
-logo_thumb: /assets/img/supporters/elokon.svg
+logo: /assets/img/exhibitors/elokon.svg
+logo_thumb: /assets/img/exhibitors/elokon.svg
 ---
 At ELOKON, we develop and implement automated safety and driver-assistence-systems or forklifts and other material handling equipment. Our innovative technologies align with the cutting-edge advancements of Industry 4.0. Over 3,000 customers around the world benefit from our solutions - to improve workplace safety and increase material handling productivity. ELOKON is also a leading provider machinery safety engineering, advising multinational corporations on machinery safety issues.
 

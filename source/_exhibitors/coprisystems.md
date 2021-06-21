@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: CopriSystems
 sort_order: 12
@@ -7,8 +7,8 @@ partner_status: Exhibitor
 address: CopriSystems Ltd, Lower Road, Erlestoke, Devizes, Wiltshire, SN10 5UE
 website: https://www.coprisystems.com/
 description: With over 25 years of experience, CopriSystems is a market leader in the design, manufacture and installation of warehouse extensions, shelters, canopies, freestanding buildings, bespoke structures and sports domes.
-logo: /assets/img/supporters/coprisystems.svg
-logo_thumb: /assets/img/supporters/coprisystems.svg
+logo: /assets/img/exhibitors/coprisystems.svg
+logo_thumb: /assets/img/exhibitors/coprisystems.svg
 ---
 With over 25 years of experience, CopriSystems is a market leader in the design, manufacture and installation of warehouse extensions, shelters, canopies, freestanding buildings, bespoke structures and sports domes.
 

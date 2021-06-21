@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: Logistex
 sort_order: 15
@@ -7,8 +7,8 @@ partner_status: Exhibitor
 address: Logistex, 2700 Kettering Parkway, Kettering, Northamptonshire, NN15 6XR
 website: http://www.logistex.com
 description: Logistex provide automated materials handling and software (WMS) solutions for warehousing operations.  We are specialists in storage and retrieval, order forwarding, picking and sortation systems. As an independent company with no manufacturing ties, we integrate products from across the industry without compromise. Our services cover, Warehouse/Materials Handling Design & Implementation, Warehouse Management Software and Control Systems, Equipment Refurbishment and Maintenance, Facilities Management and 24/7 Hotline Support and Spares.
-logo: /assets/img/supporters/logistex.svg
-logo_thumb: /assets/img/supporters/logistex.svg
+logo: /assets/img/exhibitors/logistex.svg
+logo_thumb: /assets/img/exhibitors/logistex.svg
 ---
 
 Logistex provide automated materials handling and software (WMS) solutions for warehousing operations.  We are specialists in storage and retrieval, order forwarding, picking and sortation systems. As an independent company with no manufacturing ties, we integrate products from across the industry without compromise. Our services cover, Warehouse/Materials Handling Design & Implementation, Warehouse Management Software and Control Systems, Equipment Refurbishment and Maintenance, Facilities Management and 24/7 Hotline Support and Spares.

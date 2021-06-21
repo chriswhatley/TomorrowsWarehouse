@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: UKMHA
 sort_order: 7
@@ -7,8 +7,8 @@ partner_status: Supporter
 address: UK Material Handling Association Ltd, 5-7 High Street, Sunninghill, Ascot, Berkshire, SL5 9NQ
 website: https://www.ukmha.org.uk/
 description: The UKMHA is a not-for-profit organisation representing all aspects of the UK's material handling industry, including manufacturers, suppliers, dealers and other stakeholders. 
-logo: /assets/img/supporters/ukmha.svg
-logo_thumb: /assets/img/supporters/ukmha.svg
+logo: /assets/img/exhibitors/ukmha.svg
+logo_thumb: /assets/img/exhibitors/ukmha.svg
 ---
 
 The UKMHA is a not-for-profit organisation representing all aspects of the UK's material handling industry, including manufacturers, suppliers, dealers and other stakeholders. The new association has been formed by the merger of the industry’s two most respected trade associations – the British Industrial Truck Association (BITA) and the Fork Lift Truck Association (FLTA).

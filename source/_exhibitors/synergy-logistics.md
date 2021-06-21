@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: Synergy Logistics
 sort_order: 18
@@ -7,8 +7,8 @@ partner_status: Exhibitor
 address: Synergy Logistics Ltd (Snapfulfil), Synergy House, Sills Ayad, Willow Farm Business Park, Castle Donnington, Derbyshire, DE74 2US
 website: https://www.snapfulfil.com/
 description: Snapfulfil is a multi-award winning, Tier 1 warehouse management system which solves these and many other common warehousing problems.
-logo: /assets/img/supporters/synergy-logistics-snapfulfil.svg
-logo_thumb: /assets/img/supporters/synergy-logistics-snapfulfil.svg
+logo: /assets/img/exhibitors/synergy-logistics-snapfulfil.svg
+logo_thumb: /assets/img/exhibitors/synergy-logistics-snapfulfil.svg
 ---
 
 Snapfulfil is a multi-award winning, Tier 1 warehouse management system which solves these and many other common warehousing problems.

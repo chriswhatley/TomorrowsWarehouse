@@ -1,5 +1,5 @@
 ---
-extends: _layouts.supporter
+extends: _layouts.exhibitor
 section: profile_content
 name: ASG Services
 sort_order: 10
@@ -7,8 +7,8 @@ partner_status: Exhibitor
 address: ASG Services, Unit 3 Easter Court, Europa Boulevard, Westbrook, Warrington, Cheshire, WA5 7ZB
 website: https://asgservices.co.uk/
 description: At ASG Services we have gained an excellent reputation for providing the most appropriate labelling and safety products to meet the specific requirements of our customers.
-logo: /assets/img/supporters/asg.svg
-logo_thumb: /assets/img/supporters/asg.svg
+logo: /assets/img/exhibitors/asg.svg
+logo_thumb: /assets/img/exhibitors/asg.svg
 ---
 
 ASG Services – Labelling and Integrated Safety Solutions
