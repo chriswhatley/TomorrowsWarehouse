@@ -1,7 +1,15 @@
+<?php
+    if($filter == 'Sponsors') {
+        $exhibitors = $exhibitors->filter(function ($value, $key) use ($page) {
+            return $value->partner_status !== 'Exhibitor';
+        });        
+    }
+?>
+
 <section class="bg-gray-800">  
 
     <div class="w-full px-6 pt-12 text-center">
-        <h3 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight text-white">Exhibitors</h3> 
+        <h3 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight text-white">{{ $title }}</h3> 
     </div>
     
     <div class="container mx-auto px-6 mt-6">
@@ -18,6 +26,9 @@
 
                         <div class="bg-white rounded-md object-cover object-center overflow-hidden">
                             <img src="{{ $exhibitor->logo }}" alt="{{ $exhibitor->name }}" class="mx-auto">
+                            @if($filter !== 'Exhibitors')
+                                <div class="py-3 text-center tracking-tighter font-sm uppercase text-gray-900">{{ $exhibitor->partner_status }}</div>
+                            @endif
                         </div>
 
                     </div>

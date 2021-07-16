@@ -63,6 +63,8 @@
         		</div>
         </section>
 
+        @include('_partials/logo-carousel', ['title' => 'Sponsors & Supporters', 'filter' => 'Sponsors'])
+
         <section class="feature-1 text-white bg-gray-800 bg-bottom bg-cover xl:bg-fixed">  
    
             <div class="flex py-12 flex-row flex-col items-center">
@@ -129,8 +131,6 @@
             </div>
         </section>
 
-       @include('_partials/exhibitors')
-
         <section class="relative bg-red-500 bg-no-repeat bg-center lg:bg-left bg-contain text-white">      
             <div class="home-register hidden md:block absolute top-0 left-0 h-full w-1/2 bg-cover bg-center"></div>                                                                 
 
@@ -154,6 +154,8 @@
             </div> 
 
         </section>
+
+        @include('_partials/logo-carousel', ['title' => 'Exhibitors', 'filter' => 'none'])
 
         @include('_partials/map')
 

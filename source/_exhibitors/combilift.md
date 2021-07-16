@@ -3,7 +3,7 @@ extends: _layouts.exhibitor
 section: profile_content
 name: Combilift
 sort_order: 5
-partner_status: Conference Programme Sponsor
+partner_status: Conference Sponsor
 address: Combilift Limited, Annahagh, H18 YW81 Monaghan, Ireland
 website: http://www.combilift.com
 description: Combilift is globally acknowledged as one of the most innovative manufacturers of customised material handling solutions for a wide range of industry sectors. 
