@@ -30,7 +30,7 @@
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                     </svg>
                 </button>
-                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 z-40 origin-top-right rounded-md shadow-lg md:w-48">
+                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 z-40 origin-top-right rounded-md shadow-lg md:w-48" style="display:none;">
                     <div class="px-2 py-2 bg-white rounded-md shadow text-gray-900">
                         <a class="nav-dropdown-item md:mt-0" href="{{ $page->resourcePath('/why-visit') }}">Why Visit</a>
                         <a class="nav-dropdown-item md:mt-0" href="{{ $page->resourcePath('/exhibitors') }}">Exhibitor List</a>
@@ -46,7 +46,7 @@
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                     </svg>
                 </button>
-                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 z-40 origin-top-right rounded-md shadow-lg md:w-48">
+                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 z-40 origin-top-right rounded-md shadow-lg md:w-48" style="display:none;">
                     <div class="px-2 py-2 bg-white rounded-md shadow text-gray-900">
                         <a class="nav-dropdown-item md:mt-0" href="{{ $page->resourcePath('/why-exhibit') }}">Why Exhibit</a>
                         <a class="nav-dropdown-item md:mt-0" href="{{ $page->resourcePath('/exhibitors') }}">Exhibitor List</a>
