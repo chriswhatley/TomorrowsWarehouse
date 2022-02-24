@@ -149,6 +149,7 @@ module.exports = {
       '72': '18rem',
       '84': '21rem',
       '96': '24rem',
+      '140' : '35rem' 
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -166,6 +167,12 @@ module.exports = {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
+      '25%': '25%',
+      '33%': '33%',
+      '40%': '40%',
+      '50%': '50%',
+      '66%': '66%',
+      '75%': '75%',
     },
     borderColor: theme => ({
       ...theme('colors'),

@@ -5,7 +5,7 @@
     <div class="container mx-auto px-6">
 
         <div class="flex flex-wrap px-4 pt-10 text-center">
-            <h3 class="w-full font-bold leading-tight uppercase tracking-tight text-2xl">The full 2021 agenda</h3>
+            <h3 class="w-full font-bold leading-tight uppercase tracking-tight text-2xl">The full 2022 agenda</h3>
             <p class="mx-auto mt-4">Times & sessions are preliminary and subject to change.</p>
         </div>
 

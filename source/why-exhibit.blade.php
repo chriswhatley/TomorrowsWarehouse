@@ -6,9 +6,9 @@
     	<div class="flex flex-wrap py-6 md:py-10 px-5 md:px-12">
 
     		<div class="w-full md:w-1/2 pr-10">
-				<h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Exhibiting at Tomorrow's Warehouse </h2> 
-    			<p class="leading-relaxed">Exhibit to access operations professionals who are seeking insights and solutions to boost their logistics processes in times of rapid and deep transformation.</p>
-                <p class="leading-relaxed">The Event presents an opportunity to engage with Warehouse, Logistics, Distribution, Operations, Production & Facilities Managers & Directors, together with Buyers and Health & Safety professionals looking to make informed decisions for their logistical processes.</p>
+				<h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Exhibiting at Tomorrow's Warehouse</h2> 
+    			<p class="leading-relaxed">Exhibit to access operations professionals who are seeking insights and solutions to boost their logistics processes in a time of rapid and deep transformation.</p>
+                <p class="leading-relaxed">The Event presents an opportunity to engage with Warehouse, Logistics, Distribution, Operations, Production & Facilities Managers & Directors, and Buyers across a range of industries from retail and eCommerce, to pharma, manufacturing, food and drink, contract logistics, and much more. </p>
                 <p class="leading-relaxed">Guarantee your exhibitor/sponsor presence at the Tomorrow's Warehouse Event today.</p>
 				
 				<div class="mt-6">

@@ -3,7 +3,13 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>{{ isSet($page_title) ?  $page_title . ' | ' : '' }}{{ $page->siteName }}</title>
 		<meta name="description" content="{{ $meta_description }}">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap" rel="stylesheet" rel="preload">
+		
+		{{-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap" rel="stylesheet" rel="preload"> --}}
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" href="{{ trim($page->baseUrl, '/') }}{{ mix('css/main.css') }}">
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ $page->resourcePath('/apple-touch-icon.png') }}">
 		<link rel="icon" type="image/png" sizes="32x32" href="{{ $page->resourcePath('/favicon-32x32.png') }}">

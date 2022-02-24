@@ -3,20 +3,14 @@
 @section('content')
 
 	<main class="z-20">
-        <div class="h-4" id="about-tomorrows-warehouse"></div>
-	
-        <section class="relative lg:h-140 lg:my-24 lg:flex lg:items-center">     
-
-            <div class="intro hidden lg:block absolute top-0 left-0 h-full w-1/2"></div> 
-
-            <div class="container mx-auto px-10 pt-4 pb-10">
-                <div class="w-full lg:ml-auto lg:pl-12 lg:w-1/2">                                                                                          
+		
+		<section class="about-wbm relative bg-gray-800 bg-no-repeat bg-center lg:bg-left bg-contain text-white">      
+            <div class="container mx-auto px-10">
+                <div class="py-12 w-full lg:w-1/2 lg:pr-12">                                                                                          
                     <h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">
 	                    About <br /> Tomorrow's Warehouse
-	                </h2>                     
-
-                    <p class="leading-relaxed">Now in its second year, Tomorrow’s Warehouse puts the spotlight on unprecedented transformation in the warehouse, tracking trends and offering insights. This one-day, free-to attend conference also highlights a range of solutions that boost warehouse performance and flexibility.</p>
-                    <p class="leading-relaxed">We were already in a time of unprecedented logistics transformation thanks to eCommerce. Now the coronavirus pandemic has made revitalising warehousing and logistics essential.</p>
+	                </h2>                        
+                    <p class="leading-relaxed">Get a handle on warehouse transformation at this one-day, free-to attend conference. We were already in a time of unprecedented logistics transformation thanks to eCommerce. Now the coronavirus pandemic has made revitalising warehousing and logistics essential.</p>
                     <div class="mt-6">
                     	<a href="{{ $page->registrationURL }}" target="_blank" class="btn btn-red" rel="noopener">
                             <div>Register Now</div>
@@ -29,41 +23,44 @@
                     </div>
                 </div>
             </div>
-
+                    
+            <div class="intro hidden lg:block absolute top-0 right-0 h-full w-1/2 bg-cover"></div>                                                                 
         </section>
 
-        <section class="px-10 text-white pb-12 lg:pb-24">            
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                
-                <div class="col-span-1 flex flex-col p-6 rounded-lg bg-red-500 place-content-between">
-                    <h3 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Why Visit</h3> 
-                    <p class="leading-relaxed">Attend Tomorrow’s Warehouse to gain practical, actionable insights that will help you make sure operations are a match for changing commercial realities.</p>
-                    <a href="{{ $page->resourcePath('/why-visit') }}" class="btn btn-gray mt-10">
-                        <div>Find Out More</div>
-                        <div>
-                            <svg class="fill-current text-white inline-block h-6 w-4">
-                                <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+        <section class="text-white">
+        		<div class="flex flex-wrap">
 
-                <div class="home-visit-exhibit col-span-1 md:hidden lg:block flex flex-col bg-center bg-cover rounded-lg overflow-hidden"></div>
-               
-                <div class="col-span-1 flex flex-col p-6 bg-gray-800 rounded-lg place-content-between">
-                    <h3 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Why Exhibit</h3> 
-                    <p class="leading-relaxed">Exhibit to access operations professionals who are seeking insights and solutions to boost their logistics processes in times of rapid and deep transformation.</p>
-                    <a href="{{ $page->resourcePath('/why-exhibit') }}" class="btn btn-red mt-10">
-                        <div>Find Out More</div>
-                        <div>
-                            <svg class="fill-current text-white inline-block h-6 w-4">
-                                <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+        			<div class="home-why-visit w-full h-56 md:h-auto md:w-1/2 lg:w-1/4 bg-gray-400 bg-center bg-cover md:order-1"></div>
 
-            </div>
+        			<div class="w-full md:w-1/2 lg:w-1/4 bg-red-500 p-10 md:order-2">
+        				<h3 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Why Visit</h3> 
+        				<p class="leading-relaxed">Attend Tomorrow’s Warehouse to gain practical, actionable insights that will help you make sure operations are a match for changing commercial realities.</p>
+        				<a href="{{ $page->resourcePath('/why-visit') }}" class="btn btn-gray mt-10">
+        					<div>Find Out More</div>
+        					<div>
+        						<svg class="fill-current text-white inline-block h-6 w-4">
+        							<path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
+        						</svg>
+        					</div>
+        				</a>
+        			</div>
+
+					<div class="home-why-exhibit w-full h-56 md:h-auto md:w-1/2 lg:w-1/4 bg-gray-400 bg-center bg-cover md:order-4 lg:order-3"></div>        			
+        			
+        			<div class="w-full md:w-1/2 lg:w-1/4 bg-gray-800 p-10 md:order-3 lg:order-4">
+        				<h3 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">Why Exhibit</h3> 
+        				<p class="leading-relaxed">Exhibit to access operations professionals who are seeking insights and solutions to boost their logistics processes in times of rapid and deep transformation.</p>
+        				<a href="{{ $page->resourcePath('/why-exhibit') }}" class="btn btn-red mt-10">
+        					<div>Find Out More</div>
+        					<div>
+        						<svg class="fill-current text-white inline-block h-6 w-4">
+        							<path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
+        						</svg>
+        					</div>
+        				</a>
+        			</div>
+
+        		</div>
         </section>
 
         @include('_partials/logo-carousel', ['title' => 'Sponsors & Supporters', 'filter' => 'Sponsors'])
@@ -72,7 +69,7 @@
    
             <div class="flex py-12 flex-row flex-col items-center">
                 <h2 class="text-center text-2xl md:text-3xl lg:text-4xl uppercase font-semibold leading-tight tracking-tight mb-2 font-medium">Tomorrow's Warehouse</h2>
-                <p class="w-full text-center text-md md:text-lg leading-relaxed font-semibold uppercase">9<span class="text-xs lowercase">th</span> June 2022 <br class="block md:hidden"> <span class="hidden md:inline-block"> - </span> CBS Arena, Coventry</p>
+                <p class="w-full text-center text-md md:text-lg leading-relaxed font-semibold uppercase">30<span class="text-xs lowercase">th</span> November 2021 <br class="block md:hidden"> <span class="hidden md:inline-block"> - </span> Ricoh Arena, Coventry</p>
 
                 <div class="flex flex-wrap w-full md:w-auto">
 
@@ -134,21 +131,18 @@
             </div>
         </section>
 
-        {{-- <section class="relative py-12 lg:py-24 lg:my-24">      --}}
-        <section class="relative lg:h-140 lg:my-24 lg:flex lg:items-center py-10">      
-
-            <div class="home-register hidden lg:block absolute top-0 right-0 h-full w-1/2"></div> 
+        <section class="relative bg-red-500 bg-no-repeat bg-center lg:bg-left bg-contain text-white">      
+            <div class="home-register hidden md:block absolute top-0 left-0 h-full w-1/2 bg-cover bg-center"></div>                                                                 
 
             <div class="container mx-auto px-10">
-                <div class="w-full lg:mr-auto lg:pr-12 lg:w-1/2 lg:text-right">                                                                                          
+                <div class="py-12 w-full md:w-1/2 md:ml-auto md:pl-12">                                                                                          
                     <h2 class="pb-4 text-xl md:text-2xl font-bold leading-tight uppercase tracking-tight">
-                         Register Your Interest
-                    </h2>                     
-
+	                    Register Your Interest
+	                </h2>                        
                     <p class="leading-relaxed">Don't miss this free-to attend conference tackling operational challenges in warehousing and logistics at a time of unprecedented transformation.</p>
                     <div class="mt-6">
-                        <a href="{{ $page->registrationURL }}" target="_blank" class="btn btn-red" rel="noopener">
-                            <div>Register Now</div>
+                    	<a href="{{ $page->registrationURL }}" class="btn btn-gray" target="_blank" rel="noopener">
+                            <div>Register now</div>
                             <div>
                                 <svg class="fill-current text-white inline-block h-6 w-4">
                                     <path class="heroicon-ui" d="M9.3 8.7a1 1 0 0 1 1.4-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.4-1.4l3.29-3.3-3.3-3.3z"/>
@@ -157,9 +151,11 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> 
 
         </section>
+
+        @include('_partials/logo-carousel', ['title' => 'Exhibitors', 'filter' => 'none'])
 
         @include('_partials/map')
 

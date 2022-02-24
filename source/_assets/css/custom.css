@@ -1,8 +1,11 @@
+html { scroll-behavior: smooth; }
+
 /******************************
 * Main Navigation Components
 /******************************/
 
 /* Main Nav Items */
+
 .nav-item {
 	@apply px-2 py-2 mt-2 text-sm uppercase font-semibold border-b-2 border-gray-900 transition duration-300 ease-in-out
 }
@@ -23,6 +26,19 @@
 
 .nav-dropdown-item:hover {
 	@apply text-white bg-red-500
+}
+
+@screen lg {
+  .hero-watermark {
+    background-image: url(../../assets/img/layout/hero-watermark.svg);  
+    @apply bg-no-repeat bg-right bg-40%
+  }
+}
+
+@screen xl {
+  .hero-watermark {
+    @apply bg-33%
+  }
 }
 
 /* Footer Nav Items*/
@@ -98,24 +114,39 @@
 		@apply mb-4
 }
 
-.hero, .feature-1 {
+.hero,
+.feature-1 {
   	background-blend-mode: soft-light;
 }
 
 .webp .hero {
-	background-image: url(../../assets/img/layout/tomorrows-warehouse-hero-3.webp);
+	background-image: url(../../assets/img/layout/hero-3-no-overlay-compressed.webp);
+}
+
+.intro,
+.home-register {
+  @apply bg-no-repeat bg-center bg-contain bg-cover object-cover overflow-hidden
+}
+.intro {
+  @apply rounded-r-lg 
+}
+
+.home-register {
+  @apply rounded-l-lg 
+}
+
+@screen lg {
+  .intro {
+    @apply bg-center
+  }
 }
 
 .webp .intro {
-	background-image: url(../../assets/img/layout/intro-2-compressed.webp);
+	background-image: url(../../assets/img/layout/about-tomorrows-warehouse.webp);
 }
 
-.webp .home-why-visit {
-	background-image: url(../../assets/img/layout/why-visit-2-compressed.webp);
-}
-
-.webp .home-why-exhibit {
-	background-image: url(../../assets/img/layout/why-exhibit-1-compressed.webp);
+.webp .home-visit-exhibit {
+	background-image: url(../../assets/img/layout/visit-exhibit-compressed.webp);
 }
 
 .webp .feature-1 {
@@ -123,7 +154,7 @@
 }
 
 .webp .home-register {
-	background-image: url(../../assets/img/layout/register-2-compressed.webp);
+	background-image: url(../../assets/img/layout/home-register-compressed.webp);
 }
 
 .webp .parallax-visit {
@@ -147,7 +178,7 @@
 }
 
 .webp .feature-exhibit-media-pack {
-	background-image: url(../../assets/img/layout/robotics-2-compressed.webp);
+	background-image: url(../../assets/img/layout/exhibit-feature-compressed.webp);
 }
 
 .webp .feature-exhibit-exhibitor-list {
@@ -159,7 +190,7 @@
 }
 
 .webp .why-visit {
-	background-image: url(../../assets/img/layout/why-visit-3-compressed.webp);
+	background-image: url(../../assets/img/layout/why-visit-4-compressed.webp);
 }
 
 .webp .why-exhibit {
@@ -184,19 +215,15 @@
 
 /*! purgecss start ignore */
 .no-webp .hero  {
-	background-image: url(../../assets/img/layout/tomorrows-warehouse-hero-3-compressed.jpg);
+	background-image: url(../../assets/img/layout/hero-3-no-overlay-compressed.jpg);
 }
 
 .no-webp .intro {
-	background-image: url(../../assets/img/layout/intro-2-compressed.jpg);
+	background-image: url(../../assets/img/layout/about-tomorrows-warehouse.jpg);
 }
 
-.no-webp .home-why-visit {
-	background-image: url(../../assets/img/layout/why-visit-2-compressed.jpg);
-}
-
-.no-webp .home-why-exhibit {
-	background-image: url(../../assets/img/layout/why-exhibit-1-compressed.jpg);
+.no-webp .home-visit-exhibit {
+	background-image: url(../../assets/img/layout/visit-exhibit-compressed.jpg);
 }
 
 .no-webp .feature-1 {
@@ -204,7 +231,7 @@
 }
 
 .no-webp .home-register {
-	background-image: url(../../assets/img/layout/register-2-compressed.jpg);
+	background-image: url(../../assets/img/layout/home-register-compressed.jpg);
 }
 
 .no-webp .parallax-visit {
@@ -228,7 +255,7 @@
 }
 
 .no-webp .feature-exhibit-media-pack {
-	background-image: url(../../assets/img/layout/robotics-2-compressed.jpg);
+	background-image: url(../../assets/img/layout/feature-exhibit-compressed.jpg);
 }
 
 .no-webp .feature-exhibit-exhibitor-list {
@@ -240,7 +267,7 @@
 }
 
 .no-webp .why-visit {
-	background-image: url(../../assets/img/layout/why-visit-3-compressed.jpg);
+	background-image: url(../../assets/img/layout/why-visit-4-compressed.jpg);
 }
 
 .no-webp .why-exhibit {
@@ -264,3 +291,179 @@
 }
 
 /*! purgecss end ignore */
+
+/****************************************
+* Mouse Animation
+****************************************/
+
+.mouse_scroll {    
+    margin: 0 auto;
+    width: 24px;
+    height: 100px;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.one
+{
+  margin-top: 1px;
+}
+
+.one, .two, .three
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.one
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.two
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.three
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}

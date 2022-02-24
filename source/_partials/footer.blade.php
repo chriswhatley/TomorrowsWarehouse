@@ -16,7 +16,7 @@
 	                       <img src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/calendar-icon.svg') }}" class="lazyload" alt="Calendar Icon" />
 	                    </div>
 	                    <div class="w-full text-white tracking-tight">
-	                        Tuesday 30<sup>th</sup> November 2021
+	                        Tuesday 9<sup>th</sup> June 2021
 	                    </div>
 	                </div>                                      
 
@@ -40,7 +40,7 @@
 	                		<img src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" data-src="{{ $page->resourcePath('/assets/img/icons/home-icon.svg') }}" class="lazyload" alt="Home Icon" />
 	                	</div>
 	                	<div class="w-full text-white tracking-tight">
-	                		Ricoh Arena<br />
+	                		Coventry Building Society Arena<br />
 	                		Judds Lane, Longford<br />
 	                		Coventry, CV6 6GE
 	                	</div>

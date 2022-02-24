@@ -614,6 +614,9 @@ video {
   }
 }
 
+html { scroll-behavior: smooth;
+}
+
 /******************************
 * Main Navigation Components
 /******************************/
@@ -674,6 +677,21 @@ video {
   --bg-opacity: 1;
   background-color: #d2232a;
   background-color: rgba(210, 35, 42, var(--bg-opacity))
+}
+
+@media (min-width: 1024px) {
+  .hero-watermark {
+    background-image: url(../../assets/img/layout/hero-watermark.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40%
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-watermark {
+    background-size: 33%
+  }
 }
 
 /* Footer Nav Items*/
@@ -806,24 +824,48 @@ p {
   margin-bottom: 1rem
 }
 
-.hero, .feature-1 {
+.hero,
+.feature-1 {
   background-blend-mode: soft-light;
 }
 
 .webp .hero {
-  background-image: url(../../assets/img/layout/tomorrows-warehouse-hero-3.webp);
+  background-image: url(../../assets/img/layout/hero-3-no-overlay-compressed.webp);
+}
+
+.intro,
+.home-register {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden
+}
+
+.intro {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem
+}
+
+.home-register {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    background-position: center
+  }
 }
 
 .webp .intro {
-  background-image: url(../../assets/img/layout/intro-2-compressed.webp);
+  background-image: url(../../assets/img/layout/about-tomorrows-warehouse.webp);
 }
 
-.webp .home-why-visit {
-  background-image: url(../../assets/img/layout/why-visit-2-compressed.webp);
-}
-
-.webp .home-why-exhibit {
-  background-image: url(../../assets/img/layout/why-exhibit-1-compressed.webp);
+.webp .home-visit-exhibit {
+  background-image: url(../../assets/img/layout/visit-exhibit-compressed.webp);
 }
 
 .webp .feature-1 {
@@ -831,7 +873,7 @@ p {
 }
 
 .webp .home-register {
-  background-image: url(../../assets/img/layout/register-2-compressed.webp);
+  background-image: url(../../assets/img/layout/home-register-compressed.webp);
 }
 
 .webp .parallax-visit {
@@ -855,7 +897,7 @@ p {
 }
 
 .webp .feature-exhibit-media-pack {
-  background-image: url(../../assets/img/layout/robotics-2-compressed.webp);
+  background-image: url(../../assets/img/layout/exhibit-feature-compressed.webp);
 }
 
 .webp .feature-exhibit-exhibitor-list {
@@ -867,7 +909,7 @@ p {
 }
 
 .webp .why-visit {
-  background-image: url(../../assets/img/layout/why-visit-3-compressed.webp);
+  background-image: url(../../assets/img/layout/why-visit-4-compressed.webp);
 }
 
 .webp .why-exhibit {
@@ -893,19 +935,15 @@ p {
 /*! purgecss start ignore */
 
 .no-webp .hero  {
-  background-image: url(../../assets/img/layout/tomorrows-warehouse-hero-3-compressed.jpg);
+  background-image: url(../../assets/img/layout/hero-3-no-overlay-compressed.jpg);
 }
 
 .no-webp .intro {
-  background-image: url(../../assets/img/layout/intro-2-compressed.jpg);
+  background-image: url(../../assets/img/layout/about-tomorrows-warehouse.jpg);
 }
 
-.no-webp .home-why-visit {
-  background-image: url(../../assets/img/layout/why-visit-2-compressed.jpg);
-}
-
-.no-webp .home-why-exhibit {
-  background-image: url(../../assets/img/layout/why-exhibit-1-compressed.jpg);
+.no-webp .home-visit-exhibit {
+  background-image: url(../../assets/img/layout/visit-exhibit-compressed.jpg);
 }
 
 .no-webp .feature-1 {
@@ -913,7 +951,7 @@ p {
 }
 
 .no-webp .home-register {
-  background-image: url(../../assets/img/layout/register-2-compressed.jpg);
+  background-image: url(../../assets/img/layout/home-register-compressed.jpg);
 }
 
 .no-webp .parallax-visit {
@@ -937,7 +975,7 @@ p {
 }
 
 .no-webp .feature-exhibit-media-pack {
-  background-image: url(../../assets/img/layout/robotics-2-compressed.jpg);
+  background-image: url(../../assets/img/layout/feature-exhibit-compressed.jpg);
 }
 
 .no-webp .feature-exhibit-exhibitor-list {
@@ -949,7 +987,7 @@ p {
 }
 
 .no-webp .why-visit {
-  background-image: url(../../assets/img/layout/why-visit-3-compressed.jpg);
+  background-image: url(../../assets/img/layout/why-visit-4-compressed.jpg);
 }
 
 .no-webp .why-exhibit {
@@ -973,6 +1011,147 @@ p {
 }
 
 /*! purgecss end ignore */
+
+/****************************************
+* Mouse Animation
+****************************************/
+
+.mouse_scroll {
+  margin: 0 auto;
+  width: 24px;
+  height: 100px;
+}
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px; /* IE 9 */ /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.one
+{
+  margin-top: 1px;
+}
+
+.one, .two, .three
+{
+  -webkit-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+
+.one
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-delay: alternate;
+          animation-delay: alternate;
+}
+
+.two
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  animation-delay: .2s;
+  animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.three
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  animation-delay: .3s;
+  animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes mouse-wheel {
+  0% { top: 1px;
+  }
+
+  25% { top: 2px;
+  }
+
+  50% { top: 3px;
+  }
+
+  75% { top: 2px;
+  }
+
+  100% { top: 1px;
+  }
+}
+
+@-webkit-keyframes mouse-scroll {
+  0%   { opacity: 0;
+  }
+
+  50%  { opacity: .5;
+  }
+
+  100% { opacity: 1;
+  }
+}
+
+@keyframes mouse-scroll {
+  0%   { opacity: 0;
+  }
+
+  50%  { opacity: .5;
+  }
+
+  100% { opacity: 1;
+  }
+}
 
 /*! purgecss start ignore */
 
@@ -1904,6 +2083,18 @@ button.swiper-pagination-bullet {
   margin-left: calc(24rem * calc(1 - var(--space-x-reverse)));
 }
 
+.space-y-140 > :not(template) ~ :not(template) {
+  --space-y-reverse: 0;
+  margin-top: calc(35rem * calc(1 - var(--space-y-reverse)));
+  margin-bottom: calc(35rem * var(--space-y-reverse));
+}
+
+.space-x-140 > :not(template) ~ :not(template) {
+  --space-x-reverse: 0;
+  margin-right: calc(35rem * var(--space-x-reverse));
+  margin-left: calc(35rem * calc(1 - var(--space-x-reverse)));
+}
+
 .space-y-px > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(1px * calc(1 - var(--space-y-reverse)));
@@ -2154,6 +2345,18 @@ button.swiper-pagination-bullet {
   --space-x-reverse: 0;
   margin-right: calc(-24rem * var(--space-x-reverse));
   margin-left: calc(-24rem * calc(1 - var(--space-x-reverse)));
+}
+
+.-space-y-140 > :not(template) ~ :not(template) {
+  --space-y-reverse: 0;
+  margin-top: calc(-35rem * calc(1 - var(--space-y-reverse)));
+  margin-bottom: calc(-35rem * var(--space-y-reverse));
+}
+
+.-space-x-140 > :not(template) ~ :not(template) {
+  --space-x-reverse: 0;
+  margin-right: calc(-35rem * var(--space-x-reverse));
+  margin-left: calc(-35rem * calc(1 - var(--space-x-reverse)));
 }
 
 .-space-y-px > :not(template) ~ :not(template) {
@@ -8663,6 +8866,30 @@ button.swiper-pagination-bullet {
   background-size: contain;
 }
 
+.bg-25\% {
+  background-size: 25%;
+}
+
+.bg-33\% {
+  background-size: 33%;
+}
+
+.bg-40\% {
+  background-size: 40%;
+}
+
+.bg-50\% {
+  background-size: 50%;
+}
+
+.bg-66\% {
+  background-size: 66%;
+}
+
+.bg-75\% {
+  background-size: 75%;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
@@ -11425,6 +11652,10 @@ button.swiper-pagination-bullet {
   height: 24rem;
 }
 
+.h-140 {
+  height: 35rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -11641,6 +11872,10 @@ button.swiper-pagination-bullet {
   margin: 24rem;
 }
 
+.m-140 {
+  margin: 35rem;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -11727,6 +11962,10 @@ button.swiper-pagination-bullet {
 
 .-m-96 {
   margin: -24rem;
+}
+
+.-m-140 {
+  margin: -35rem;
 }
 
 .-m-px {
@@ -11941,6 +12180,16 @@ button.swiper-pagination-bullet {
 .mx-96 {
   margin-left: 24rem;
   margin-right: 24rem;
+}
+
+.my-140 {
+  margin-top: 35rem;
+  margin-bottom: 35rem;
+}
+
+.mx-140 {
+  margin-left: 35rem;
+  margin-right: 35rem;
 }
 
 .my-auto {
@@ -12161,6 +12410,16 @@ button.swiper-pagination-bullet {
 .-mx-96 {
   margin-left: -24rem;
   margin-right: -24rem;
+}
+
+.-my-140 {
+  margin-top: -35rem;
+  margin-bottom: -35rem;
+}
+
+.-mx-140 {
+  margin-left: -35rem;
+  margin-right: -35rem;
 }
 
 .-my-px {
@@ -12507,6 +12766,22 @@ button.swiper-pagination-bullet {
 
 .ml-96 {
   margin-left: 24rem;
+}
+
+.mt-140 {
+  margin-top: 35rem;
+}
+
+.mr-140 {
+  margin-right: 35rem;
+}
+
+.mb-140 {
+  margin-bottom: 35rem;
+}
+
+.ml-140 {
+  margin-left: 35rem;
 }
 
 .mt-auto {
@@ -12859,6 +13134,22 @@ button.swiper-pagination-bullet {
 
 .-ml-96 {
   margin-left: -24rem;
+}
+
+.-mt-140 {
+  margin-top: -35rem;
+}
+
+.-mr-140 {
+  margin-right: -35rem;
+}
+
+.-mb-140 {
+  margin-bottom: -35rem;
+}
+
+.-ml-140 {
+  margin-left: -35rem;
 }
 
 .-mt-px {
@@ -13308,6 +13599,10 @@ button.swiper-pagination-bullet {
   padding: 24rem;
 }
 
+.p-140 {
+  padding: 35rem;
+}
+
 .p-px {
   padding: 1px;
 }
@@ -13520,6 +13815,16 @@ button.swiper-pagination-bullet {
 .px-96 {
   padding-left: 24rem;
   padding-right: 24rem;
+}
+
+.py-140 {
+  padding-top: 35rem;
+  padding-bottom: 35rem;
+}
+
+.px-140 {
+  padding-left: 35rem;
+  padding-right: 35rem;
 }
 
 .py-px {
@@ -13866,6 +14171,22 @@ button.swiper-pagination-bullet {
 
 .pl-96 {
   padding-left: 24rem;
+}
+
+.pt-140 {
+  padding-top: 35rem;
+}
+
+.pr-140 {
+  padding-right: 35rem;
+}
+
+.pb-140 {
+  padding-bottom: 35rem;
+}
+
+.pl-140 {
+  padding-left: 35rem;
 }
 
 .pt-px {
@@ -19666,6 +19987,10 @@ button.swiper-pagination-bullet {
   width: 24rem;
 }
 
+.w-140 {
+  width: 35rem;
+}
+
 .w-auto {
   width: auto;
 }
@@ -19919,6 +20244,11 @@ button.swiper-pagination-bullet {
   gap: 24rem;
 }
 
+.gap-140 {
+  grid-gap: 35rem;
+  gap: 35rem;
+}
+
 .gap-px {
   grid-gap: 1px;
   gap: 1px;
@@ -20048,6 +20378,12 @@ button.swiper-pagination-bullet {
   grid-column-gap: 24rem;
   -moz-column-gap: 24rem;
        column-gap: 24rem;
+}
+
+.col-gap-140 {
+  grid-column-gap: 35rem;
+  -moz-column-gap: 35rem;
+       column-gap: 35rem;
 }
 
 .col-gap-px {
@@ -20182,6 +20518,12 @@ button.swiper-pagination-bullet {
        column-gap: 24rem;
 }
 
+.gap-x-140 {
+  grid-column-gap: 35rem;
+  -moz-column-gap: 35rem;
+       column-gap: 35rem;
+}
+
 .gap-x-px {
   grid-column-gap: 1px;
   -moz-column-gap: 1px;
@@ -20293,6 +20635,11 @@ button.swiper-pagination-bullet {
   row-gap: 24rem;
 }
 
+.row-gap-140 {
+  grid-row-gap: 35rem;
+  row-gap: 35rem;
+}
+
 .row-gap-px {
   grid-row-gap: 1px;
   row-gap: 1px;
@@ -20401,6 +20748,11 @@ button.swiper-pagination-bullet {
 .gap-y-96 {
   grid-row-gap: 24rem;
   row-gap: 24rem;
+}
+
+.gap-y-140 {
+  grid-row-gap: 35rem;
+  row-gap: 35rem;
 }
 
 .gap-y-px {
@@ -21405,6 +21757,10 @@ button.swiper-pagination-bullet {
   --transform-translate-x: 24rem;
 }
 
+.translate-x-140 {
+  --transform-translate-x: 35rem;
+}
+
 .translate-x-px {
   --transform-translate-x: 1px;
 }
@@ -21487,6 +21843,10 @@ button.swiper-pagination-bullet {
 
 .-translate-x-96 {
   --transform-translate-x: -24rem;
+}
+
+.-translate-x-140 {
+  --transform-translate-x: -35rem;
 }
 
 .-translate-x-px {
@@ -21593,6 +21953,10 @@ button.swiper-pagination-bullet {
   --transform-translate-y: 24rem;
 }
 
+.translate-y-140 {
+  --transform-translate-y: 35rem;
+}
+
 .translate-y-px {
   --transform-translate-y: 1px;
 }
@@ -21675,6 +22039,10 @@ button.swiper-pagination-bullet {
 
 .-translate-y-96 {
   --transform-translate-y: -24rem;
+}
+
+.-translate-y-140 {
+  --transform-translate-y: -35rem;
 }
 
 .-translate-y-px {
@@ -21781,6 +22149,10 @@ button.swiper-pagination-bullet {
   --transform-translate-x: 24rem;
 }
 
+.hover\:translate-x-140:hover {
+  --transform-translate-x: 35rem;
+}
+
 .hover\:translate-x-px:hover {
   --transform-translate-x: 1px;
 }
@@ -21863,6 +22235,10 @@ button.swiper-pagination-bullet {
 
 .hover\:-translate-x-96:hover {
   --transform-translate-x: -24rem;
+}
+
+.hover\:-translate-x-140:hover {
+  --transform-translate-x: -35rem;
 }
 
 .hover\:-translate-x-px:hover {
@@ -21969,6 +22345,10 @@ button.swiper-pagination-bullet {
   --transform-translate-y: 24rem;
 }
 
+.hover\:translate-y-140:hover {
+  --transform-translate-y: 35rem;
+}
+
 .hover\:translate-y-px:hover {
   --transform-translate-y: 1px;
 }
@@ -22051,6 +22431,10 @@ button.swiper-pagination-bullet {
 
 .hover\:-translate-y-96:hover {
   --transform-translate-y: -24rem;
+}
+
+.hover\:-translate-y-140:hover {
+  --transform-translate-y: -35rem;
 }
 
 .hover\:-translate-y-px:hover {
@@ -22157,6 +22541,10 @@ button.swiper-pagination-bullet {
   --transform-translate-x: 24rem;
 }
 
+.focus\:translate-x-140:focus {
+  --transform-translate-x: 35rem;
+}
+
 .focus\:translate-x-px:focus {
   --transform-translate-x: 1px;
 }
@@ -22239,6 +22627,10 @@ button.swiper-pagination-bullet {
 
 .focus\:-translate-x-96:focus {
   --transform-translate-x: -24rem;
+}
+
+.focus\:-translate-x-140:focus {
+  --transform-translate-x: -35rem;
 }
 
 .focus\:-translate-x-px:focus {
@@ -22345,6 +22737,10 @@ button.swiper-pagination-bullet {
   --transform-translate-y: 24rem;
 }
 
+.focus\:translate-y-140:focus {
+  --transform-translate-y: 35rem;
+}
+
 .focus\:translate-y-px:focus {
   --transform-translate-y: 1px;
 }
@@ -22427,6 +22823,10 @@ button.swiper-pagination-bullet {
 
 .focus\:-translate-y-96:focus {
   --transform-translate-y: -24rem;
+}
+
+.focus\:-translate-y-140:focus {
+  --transform-translate-y: -35rem;
 }
 
 .focus\:-translate-y-px:focus {
@@ -23097,6 +23497,18 @@ button.swiper-pagination-bullet {
     margin-left: calc(24rem * calc(1 - var(--space-x-reverse)));
   }
 
+  .sm\:space-y-140 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(35rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(35rem * var(--space-y-reverse));
+  }
+
+  .sm\:space-x-140 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(35rem * var(--space-x-reverse));
+    margin-left: calc(35rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .sm\:space-y-px > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(1px * calc(1 - var(--space-y-reverse)));
@@ -23347,6 +23759,18 @@ button.swiper-pagination-bullet {
     --space-x-reverse: 0;
     margin-right: calc(-24rem * var(--space-x-reverse));
     margin-left: calc(-24rem * calc(1 - var(--space-x-reverse)));
+  }
+
+  .sm\:-space-y-140 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-35rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-35rem * var(--space-y-reverse));
+  }
+
+  .sm\:-space-x-140 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-35rem * var(--space-x-reverse));
+    margin-left: calc(-35rem * calc(1 - var(--space-x-reverse)));
   }
 
   .sm\:-space-y-px > :not(template) ~ :not(template) {
@@ -29856,6 +30280,30 @@ button.swiper-pagination-bullet {
     background-size: contain;
   }
 
+  .sm\:bg-25\% {
+    background-size: 25%;
+  }
+
+  .sm\:bg-33\% {
+    background-size: 33%;
+  }
+
+  .sm\:bg-40\% {
+    background-size: 40%;
+  }
+
+  .sm\:bg-50\% {
+    background-size: 50%;
+  }
+
+  .sm\:bg-66\% {
+    background-size: 66%;
+  }
+
+  .sm\:bg-75\% {
+    background-size: 75%;
+  }
+
   .sm\:border-collapse {
     border-collapse: collapse;
   }
@@ -32618,6 +33066,10 @@ button.swiper-pagination-bullet {
     height: 24rem;
   }
 
+  .sm\:h-140 {
+    height: 35rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -32834,6 +33286,10 @@ button.swiper-pagination-bullet {
     margin: 24rem;
   }
 
+  .sm\:m-140 {
+    margin: 35rem;
+  }
+
   .sm\:m-auto {
     margin: auto;
   }
@@ -32920,6 +33376,10 @@ button.swiper-pagination-bullet {
 
   .sm\:-m-96 {
     margin: -24rem;
+  }
+
+  .sm\:-m-140 {
+    margin: -35rem;
   }
 
   .sm\:-m-px {
@@ -33134,6 +33594,16 @@ button.swiper-pagination-bullet {
   .sm\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
+  }
+
+  .sm\:my-140 {
+    margin-top: 35rem;
+    margin-bottom: 35rem;
+  }
+
+  .sm\:mx-140 {
+    margin-left: 35rem;
+    margin-right: 35rem;
   }
 
   .sm\:my-auto {
@@ -33354,6 +33824,16 @@ button.swiper-pagination-bullet {
   .sm\:-mx-96 {
     margin-left: -24rem;
     margin-right: -24rem;
+  }
+
+  .sm\:-my-140 {
+    margin-top: -35rem;
+    margin-bottom: -35rem;
+  }
+
+  .sm\:-mx-140 {
+    margin-left: -35rem;
+    margin-right: -35rem;
   }
 
   .sm\:-my-px {
@@ -33700,6 +34180,22 @@ button.swiper-pagination-bullet {
 
   .sm\:ml-96 {
     margin-left: 24rem;
+  }
+
+  .sm\:mt-140 {
+    margin-top: 35rem;
+  }
+
+  .sm\:mr-140 {
+    margin-right: 35rem;
+  }
+
+  .sm\:mb-140 {
+    margin-bottom: 35rem;
+  }
+
+  .sm\:ml-140 {
+    margin-left: 35rem;
   }
 
   .sm\:mt-auto {
@@ -34052,6 +34548,22 @@ button.swiper-pagination-bullet {
 
   .sm\:-ml-96 {
     margin-left: -24rem;
+  }
+
+  .sm\:-mt-140 {
+    margin-top: -35rem;
+  }
+
+  .sm\:-mr-140 {
+    margin-right: -35rem;
+  }
+
+  .sm\:-mb-140 {
+    margin-bottom: -35rem;
+  }
+
+  .sm\:-ml-140 {
+    margin-left: -35rem;
   }
 
   .sm\:-mt-px {
@@ -34501,6 +35013,10 @@ button.swiper-pagination-bullet {
     padding: 24rem;
   }
 
+  .sm\:p-140 {
+    padding: 35rem;
+  }
+
   .sm\:p-px {
     padding: 1px;
   }
@@ -34713,6 +35229,16 @@ button.swiper-pagination-bullet {
   .sm\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .sm\:py-140 {
+    padding-top: 35rem;
+    padding-bottom: 35rem;
+  }
+
+  .sm\:px-140 {
+    padding-left: 35rem;
+    padding-right: 35rem;
   }
 
   .sm\:py-px {
@@ -35059,6 +35585,22 @@ button.swiper-pagination-bullet {
 
   .sm\:pl-96 {
     padding-left: 24rem;
+  }
+
+  .sm\:pt-140 {
+    padding-top: 35rem;
+  }
+
+  .sm\:pr-140 {
+    padding-right: 35rem;
+  }
+
+  .sm\:pb-140 {
+    padding-bottom: 35rem;
+  }
+
+  .sm\:pl-140 {
+    padding-left: 35rem;
   }
 
   .sm\:pt-px {
@@ -40859,6 +41401,10 @@ button.swiper-pagination-bullet {
     width: 24rem;
   }
 
+  .sm\:w-140 {
+    width: 35rem;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -41112,6 +41658,11 @@ button.swiper-pagination-bullet {
     gap: 24rem;
   }
 
+  .sm\:gap-140 {
+    grid-gap: 35rem;
+    gap: 35rem;
+  }
+
   .sm\:gap-px {
     grid-gap: 1px;
     gap: 1px;
@@ -41241,6 +41792,12 @@ button.swiper-pagination-bullet {
     grid-column-gap: 24rem;
     -moz-column-gap: 24rem;
          column-gap: 24rem;
+  }
+
+  .sm\:col-gap-140 {
+    grid-column-gap: 35rem;
+    -moz-column-gap: 35rem;
+         column-gap: 35rem;
   }
 
   .sm\:col-gap-px {
@@ -41375,6 +41932,12 @@ button.swiper-pagination-bullet {
          column-gap: 24rem;
   }
 
+  .sm\:gap-x-140 {
+    grid-column-gap: 35rem;
+    -moz-column-gap: 35rem;
+         column-gap: 35rem;
+  }
+
   .sm\:gap-x-px {
     grid-column-gap: 1px;
     -moz-column-gap: 1px;
@@ -41486,6 +42049,11 @@ button.swiper-pagination-bullet {
     row-gap: 24rem;
   }
 
+  .sm\:row-gap-140 {
+    grid-row-gap: 35rem;
+    row-gap: 35rem;
+  }
+
   .sm\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
@@ -41594,6 +42162,11 @@ button.swiper-pagination-bullet {
   .sm\:gap-y-96 {
     grid-row-gap: 24rem;
     row-gap: 24rem;
+  }
+
+  .sm\:gap-y-140 {
+    grid-row-gap: 35rem;
+    row-gap: 35rem;
   }
 
   .sm\:gap-y-px {
@@ -42598,6 +43171,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .sm\:translate-x-140 {
+    --transform-translate-x: 35rem;
+  }
+
   .sm\:translate-x-px {
     --transform-translate-x: 1px;
   }
@@ -42680,6 +43257,10 @@ button.swiper-pagination-bullet {
 
   .sm\:-translate-x-96 {
     --transform-translate-x: -24rem;
+  }
+
+  .sm\:-translate-x-140 {
+    --transform-translate-x: -35rem;
   }
 
   .sm\:-translate-x-px {
@@ -42786,6 +43367,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .sm\:translate-y-140 {
+    --transform-translate-y: 35rem;
+  }
+
   .sm\:translate-y-px {
     --transform-translate-y: 1px;
   }
@@ -42868,6 +43453,10 @@ button.swiper-pagination-bullet {
 
   .sm\:-translate-y-96 {
     --transform-translate-y: -24rem;
+  }
+
+  .sm\:-translate-y-140 {
+    --transform-translate-y: -35rem;
   }
 
   .sm\:-translate-y-px {
@@ -42974,6 +43563,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .sm\:hover\:translate-x-140:hover {
+    --transform-translate-x: 35rem;
+  }
+
   .sm\:hover\:translate-x-px:hover {
     --transform-translate-x: 1px;
   }
@@ -43056,6 +43649,10 @@ button.swiper-pagination-bullet {
 
   .sm\:hover\:-translate-x-96:hover {
     --transform-translate-x: -24rem;
+  }
+
+  .sm\:hover\:-translate-x-140:hover {
+    --transform-translate-x: -35rem;
   }
 
   .sm\:hover\:-translate-x-px:hover {
@@ -43162,6 +43759,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .sm\:hover\:translate-y-140:hover {
+    --transform-translate-y: 35rem;
+  }
+
   .sm\:hover\:translate-y-px:hover {
     --transform-translate-y: 1px;
   }
@@ -43244,6 +43845,10 @@ button.swiper-pagination-bullet {
 
   .sm\:hover\:-translate-y-96:hover {
     --transform-translate-y: -24rem;
+  }
+
+  .sm\:hover\:-translate-y-140:hover {
+    --transform-translate-y: -35rem;
   }
 
   .sm\:hover\:-translate-y-px:hover {
@@ -43350,6 +43955,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .sm\:focus\:translate-x-140:focus {
+    --transform-translate-x: 35rem;
+  }
+
   .sm\:focus\:translate-x-px:focus {
     --transform-translate-x: 1px;
   }
@@ -43432,6 +44041,10 @@ button.swiper-pagination-bullet {
 
   .sm\:focus\:-translate-x-96:focus {
     --transform-translate-x: -24rem;
+  }
+
+  .sm\:focus\:-translate-x-140:focus {
+    --transform-translate-x: -35rem;
   }
 
   .sm\:focus\:-translate-x-px:focus {
@@ -43538,6 +44151,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .sm\:focus\:translate-y-140:focus {
+    --transform-translate-y: 35rem;
+  }
+
   .sm\:focus\:translate-y-px:focus {
     --transform-translate-y: 1px;
   }
@@ -43620,6 +44237,10 @@ button.swiper-pagination-bullet {
 
   .sm\:focus\:-translate-y-96:focus {
     --transform-translate-y: -24rem;
+  }
+
+  .sm\:focus\:-translate-y-140:focus {
+    --transform-translate-y: -35rem;
   }
 
   .sm\:focus\:-translate-y-px:focus {
@@ -44225,6 +44846,18 @@ button.swiper-pagination-bullet {
     margin-left: calc(24rem * calc(1 - var(--space-x-reverse)));
   }
 
+  .md\:space-y-140 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(35rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(35rem * var(--space-y-reverse));
+  }
+
+  .md\:space-x-140 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(35rem * var(--space-x-reverse));
+    margin-left: calc(35rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .md\:space-y-px > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(1px * calc(1 - var(--space-y-reverse)));
@@ -44475,6 +45108,18 @@ button.swiper-pagination-bullet {
     --space-x-reverse: 0;
     margin-right: calc(-24rem * var(--space-x-reverse));
     margin-left: calc(-24rem * calc(1 - var(--space-x-reverse)));
+  }
+
+  .md\:-space-y-140 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-35rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-35rem * var(--space-y-reverse));
+  }
+
+  .md\:-space-x-140 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-35rem * var(--space-x-reverse));
+    margin-left: calc(-35rem * calc(1 - var(--space-x-reverse)));
   }
 
   .md\:-space-y-px > :not(template) ~ :not(template) {
@@ -50984,6 +51629,30 @@ button.swiper-pagination-bullet {
     background-size: contain;
   }
 
+  .md\:bg-25\% {
+    background-size: 25%;
+  }
+
+  .md\:bg-33\% {
+    background-size: 33%;
+  }
+
+  .md\:bg-40\% {
+    background-size: 40%;
+  }
+
+  .md\:bg-50\% {
+    background-size: 50%;
+  }
+
+  .md\:bg-66\% {
+    background-size: 66%;
+  }
+
+  .md\:bg-75\% {
+    background-size: 75%;
+  }
+
   .md\:border-collapse {
     border-collapse: collapse;
   }
@@ -53746,6 +54415,10 @@ button.swiper-pagination-bullet {
     height: 24rem;
   }
 
+  .md\:h-140 {
+    height: 35rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -53962,6 +54635,10 @@ button.swiper-pagination-bullet {
     margin: 24rem;
   }
 
+  .md\:m-140 {
+    margin: 35rem;
+  }
+
   .md\:m-auto {
     margin: auto;
   }
@@ -54048,6 +54725,10 @@ button.swiper-pagination-bullet {
 
   .md\:-m-96 {
     margin: -24rem;
+  }
+
+  .md\:-m-140 {
+    margin: -35rem;
   }
 
   .md\:-m-px {
@@ -54262,6 +54943,16 @@ button.swiper-pagination-bullet {
   .md\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
+  }
+
+  .md\:my-140 {
+    margin-top: 35rem;
+    margin-bottom: 35rem;
+  }
+
+  .md\:mx-140 {
+    margin-left: 35rem;
+    margin-right: 35rem;
   }
 
   .md\:my-auto {
@@ -54482,6 +55173,16 @@ button.swiper-pagination-bullet {
   .md\:-mx-96 {
     margin-left: -24rem;
     margin-right: -24rem;
+  }
+
+  .md\:-my-140 {
+    margin-top: -35rem;
+    margin-bottom: -35rem;
+  }
+
+  .md\:-mx-140 {
+    margin-left: -35rem;
+    margin-right: -35rem;
   }
 
   .md\:-my-px {
@@ -54828,6 +55529,22 @@ button.swiper-pagination-bullet {
 
   .md\:ml-96 {
     margin-left: 24rem;
+  }
+
+  .md\:mt-140 {
+    margin-top: 35rem;
+  }
+
+  .md\:mr-140 {
+    margin-right: 35rem;
+  }
+
+  .md\:mb-140 {
+    margin-bottom: 35rem;
+  }
+
+  .md\:ml-140 {
+    margin-left: 35rem;
   }
 
   .md\:mt-auto {
@@ -55180,6 +55897,22 @@ button.swiper-pagination-bullet {
 
   .md\:-ml-96 {
     margin-left: -24rem;
+  }
+
+  .md\:-mt-140 {
+    margin-top: -35rem;
+  }
+
+  .md\:-mr-140 {
+    margin-right: -35rem;
+  }
+
+  .md\:-mb-140 {
+    margin-bottom: -35rem;
+  }
+
+  .md\:-ml-140 {
+    margin-left: -35rem;
   }
 
   .md\:-mt-px {
@@ -55629,6 +56362,10 @@ button.swiper-pagination-bullet {
     padding: 24rem;
   }
 
+  .md\:p-140 {
+    padding: 35rem;
+  }
+
   .md\:p-px {
     padding: 1px;
   }
@@ -55841,6 +56578,16 @@ button.swiper-pagination-bullet {
   .md\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .md\:py-140 {
+    padding-top: 35rem;
+    padding-bottom: 35rem;
+  }
+
+  .md\:px-140 {
+    padding-left: 35rem;
+    padding-right: 35rem;
   }
 
   .md\:py-px {
@@ -56187,6 +56934,22 @@ button.swiper-pagination-bullet {
 
   .md\:pl-96 {
     padding-left: 24rem;
+  }
+
+  .md\:pt-140 {
+    padding-top: 35rem;
+  }
+
+  .md\:pr-140 {
+    padding-right: 35rem;
+  }
+
+  .md\:pb-140 {
+    padding-bottom: 35rem;
+  }
+
+  .md\:pl-140 {
+    padding-left: 35rem;
   }
 
   .md\:pt-px {
@@ -61987,6 +62750,10 @@ button.swiper-pagination-bullet {
     width: 24rem;
   }
 
+  .md\:w-140 {
+    width: 35rem;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -62240,6 +63007,11 @@ button.swiper-pagination-bullet {
     gap: 24rem;
   }
 
+  .md\:gap-140 {
+    grid-gap: 35rem;
+    gap: 35rem;
+  }
+
   .md\:gap-px {
     grid-gap: 1px;
     gap: 1px;
@@ -62369,6 +63141,12 @@ button.swiper-pagination-bullet {
     grid-column-gap: 24rem;
     -moz-column-gap: 24rem;
          column-gap: 24rem;
+  }
+
+  .md\:col-gap-140 {
+    grid-column-gap: 35rem;
+    -moz-column-gap: 35rem;
+         column-gap: 35rem;
   }
 
   .md\:col-gap-px {
@@ -62503,6 +63281,12 @@ button.swiper-pagination-bullet {
          column-gap: 24rem;
   }
 
+  .md\:gap-x-140 {
+    grid-column-gap: 35rem;
+    -moz-column-gap: 35rem;
+         column-gap: 35rem;
+  }
+
   .md\:gap-x-px {
     grid-column-gap: 1px;
     -moz-column-gap: 1px;
@@ -62614,6 +63398,11 @@ button.swiper-pagination-bullet {
     row-gap: 24rem;
   }
 
+  .md\:row-gap-140 {
+    grid-row-gap: 35rem;
+    row-gap: 35rem;
+  }
+
   .md\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
@@ -62722,6 +63511,11 @@ button.swiper-pagination-bullet {
   .md\:gap-y-96 {
     grid-row-gap: 24rem;
     row-gap: 24rem;
+  }
+
+  .md\:gap-y-140 {
+    grid-row-gap: 35rem;
+    row-gap: 35rem;
   }
 
   .md\:gap-y-px {
@@ -63726,6 +64520,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .md\:translate-x-140 {
+    --transform-translate-x: 35rem;
+  }
+
   .md\:translate-x-px {
     --transform-translate-x: 1px;
   }
@@ -63808,6 +64606,10 @@ button.swiper-pagination-bullet {
 
   .md\:-translate-x-96 {
     --transform-translate-x: -24rem;
+  }
+
+  .md\:-translate-x-140 {
+    --transform-translate-x: -35rem;
   }
 
   .md\:-translate-x-px {
@@ -63914,6 +64716,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .md\:translate-y-140 {
+    --transform-translate-y: 35rem;
+  }
+
   .md\:translate-y-px {
     --transform-translate-y: 1px;
   }
@@ -63996,6 +64802,10 @@ button.swiper-pagination-bullet {
 
   .md\:-translate-y-96 {
     --transform-translate-y: -24rem;
+  }
+
+  .md\:-translate-y-140 {
+    --transform-translate-y: -35rem;
   }
 
   .md\:-translate-y-px {
@@ -64102,6 +64912,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .md\:hover\:translate-x-140:hover {
+    --transform-translate-x: 35rem;
+  }
+
   .md\:hover\:translate-x-px:hover {
     --transform-translate-x: 1px;
   }
@@ -64184,6 +64998,10 @@ button.swiper-pagination-bullet {
 
   .md\:hover\:-translate-x-96:hover {
     --transform-translate-x: -24rem;
+  }
+
+  .md\:hover\:-translate-x-140:hover {
+    --transform-translate-x: -35rem;
   }
 
   .md\:hover\:-translate-x-px:hover {
@@ -64290,6 +65108,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .md\:hover\:translate-y-140:hover {
+    --transform-translate-y: 35rem;
+  }
+
   .md\:hover\:translate-y-px:hover {
     --transform-translate-y: 1px;
   }
@@ -64372,6 +65194,10 @@ button.swiper-pagination-bullet {
 
   .md\:hover\:-translate-y-96:hover {
     --transform-translate-y: -24rem;
+  }
+
+  .md\:hover\:-translate-y-140:hover {
+    --transform-translate-y: -35rem;
   }
 
   .md\:hover\:-translate-y-px:hover {
@@ -64478,6 +65304,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .md\:focus\:translate-x-140:focus {
+    --transform-translate-x: 35rem;
+  }
+
   .md\:focus\:translate-x-px:focus {
     --transform-translate-x: 1px;
   }
@@ -64560,6 +65390,10 @@ button.swiper-pagination-bullet {
 
   .md\:focus\:-translate-x-96:focus {
     --transform-translate-x: -24rem;
+  }
+
+  .md\:focus\:-translate-x-140:focus {
+    --transform-translate-x: -35rem;
   }
 
   .md\:focus\:-translate-x-px:focus {
@@ -64666,6 +65500,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .md\:focus\:translate-y-140:focus {
+    --transform-translate-y: 35rem;
+  }
+
   .md\:focus\:translate-y-px:focus {
     --transform-translate-y: 1px;
   }
@@ -64748,6 +65586,10 @@ button.swiper-pagination-bullet {
 
   .md\:focus\:-translate-y-96:focus {
     --transform-translate-y: -24rem;
+  }
+
+  .md\:focus\:-translate-y-140:focus {
+    --transform-translate-y: -35rem;
   }
 
   .md\:focus\:-translate-y-px:focus {
@@ -65353,6 +66195,18 @@ button.swiper-pagination-bullet {
     margin-left: calc(24rem * calc(1 - var(--space-x-reverse)));
   }
 
+  .lg\:space-y-140 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(35rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(35rem * var(--space-y-reverse));
+  }
+
+  .lg\:space-x-140 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(35rem * var(--space-x-reverse));
+    margin-left: calc(35rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .lg\:space-y-px > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(1px * calc(1 - var(--space-y-reverse)));
@@ -65603,6 +66457,18 @@ button.swiper-pagination-bullet {
     --space-x-reverse: 0;
     margin-right: calc(-24rem * var(--space-x-reverse));
     margin-left: calc(-24rem * calc(1 - var(--space-x-reverse)));
+  }
+
+  .lg\:-space-y-140 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-35rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-35rem * var(--space-y-reverse));
+  }
+
+  .lg\:-space-x-140 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-35rem * var(--space-x-reverse));
+    margin-left: calc(-35rem * calc(1 - var(--space-x-reverse)));
   }
 
   .lg\:-space-y-px > :not(template) ~ :not(template) {
@@ -72112,6 +72978,30 @@ button.swiper-pagination-bullet {
     background-size: contain;
   }
 
+  .lg\:bg-25\% {
+    background-size: 25%;
+  }
+
+  .lg\:bg-33\% {
+    background-size: 33%;
+  }
+
+  .lg\:bg-40\% {
+    background-size: 40%;
+  }
+
+  .lg\:bg-50\% {
+    background-size: 50%;
+  }
+
+  .lg\:bg-66\% {
+    background-size: 66%;
+  }
+
+  .lg\:bg-75\% {
+    background-size: 75%;
+  }
+
   .lg\:border-collapse {
     border-collapse: collapse;
   }
@@ -74874,6 +75764,10 @@ button.swiper-pagination-bullet {
     height: 24rem;
   }
 
+  .lg\:h-140 {
+    height: 35rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -75090,6 +75984,10 @@ button.swiper-pagination-bullet {
     margin: 24rem;
   }
 
+  .lg\:m-140 {
+    margin: 35rem;
+  }
+
   .lg\:m-auto {
     margin: auto;
   }
@@ -75176,6 +76074,10 @@ button.swiper-pagination-bullet {
 
   .lg\:-m-96 {
     margin: -24rem;
+  }
+
+  .lg\:-m-140 {
+    margin: -35rem;
   }
 
   .lg\:-m-px {
@@ -75390,6 +76292,16 @@ button.swiper-pagination-bullet {
   .lg\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
+  }
+
+  .lg\:my-140 {
+    margin-top: 35rem;
+    margin-bottom: 35rem;
+  }
+
+  .lg\:mx-140 {
+    margin-left: 35rem;
+    margin-right: 35rem;
   }
 
   .lg\:my-auto {
@@ -75610,6 +76522,16 @@ button.swiper-pagination-bullet {
   .lg\:-mx-96 {
     margin-left: -24rem;
     margin-right: -24rem;
+  }
+
+  .lg\:-my-140 {
+    margin-top: -35rem;
+    margin-bottom: -35rem;
+  }
+
+  .lg\:-mx-140 {
+    margin-left: -35rem;
+    margin-right: -35rem;
   }
 
   .lg\:-my-px {
@@ -75956,6 +76878,22 @@ button.swiper-pagination-bullet {
 
   .lg\:ml-96 {
     margin-left: 24rem;
+  }
+
+  .lg\:mt-140 {
+    margin-top: 35rem;
+  }
+
+  .lg\:mr-140 {
+    margin-right: 35rem;
+  }
+
+  .lg\:mb-140 {
+    margin-bottom: 35rem;
+  }
+
+  .lg\:ml-140 {
+    margin-left: 35rem;
   }
 
   .lg\:mt-auto {
@@ -76308,6 +77246,22 @@ button.swiper-pagination-bullet {
 
   .lg\:-ml-96 {
     margin-left: -24rem;
+  }
+
+  .lg\:-mt-140 {
+    margin-top: -35rem;
+  }
+
+  .lg\:-mr-140 {
+    margin-right: -35rem;
+  }
+
+  .lg\:-mb-140 {
+    margin-bottom: -35rem;
+  }
+
+  .lg\:-ml-140 {
+    margin-left: -35rem;
   }
 
   .lg\:-mt-px {
@@ -76757,6 +77711,10 @@ button.swiper-pagination-bullet {
     padding: 24rem;
   }
 
+  .lg\:p-140 {
+    padding: 35rem;
+  }
+
   .lg\:p-px {
     padding: 1px;
   }
@@ -76969,6 +77927,16 @@ button.swiper-pagination-bullet {
   .lg\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .lg\:py-140 {
+    padding-top: 35rem;
+    padding-bottom: 35rem;
+  }
+
+  .lg\:px-140 {
+    padding-left: 35rem;
+    padding-right: 35rem;
   }
 
   .lg\:py-px {
@@ -77315,6 +78283,22 @@ button.swiper-pagination-bullet {
 
   .lg\:pl-96 {
     padding-left: 24rem;
+  }
+
+  .lg\:pt-140 {
+    padding-top: 35rem;
+  }
+
+  .lg\:pr-140 {
+    padding-right: 35rem;
+  }
+
+  .lg\:pb-140 {
+    padding-bottom: 35rem;
+  }
+
+  .lg\:pl-140 {
+    padding-left: 35rem;
   }
 
   .lg\:pt-px {
@@ -83115,6 +84099,10 @@ button.swiper-pagination-bullet {
     width: 24rem;
   }
 
+  .lg\:w-140 {
+    width: 35rem;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
@@ -83368,6 +84356,11 @@ button.swiper-pagination-bullet {
     gap: 24rem;
   }
 
+  .lg\:gap-140 {
+    grid-gap: 35rem;
+    gap: 35rem;
+  }
+
   .lg\:gap-px {
     grid-gap: 1px;
     gap: 1px;
@@ -83497,6 +84490,12 @@ button.swiper-pagination-bullet {
     grid-column-gap: 24rem;
     -moz-column-gap: 24rem;
          column-gap: 24rem;
+  }
+
+  .lg\:col-gap-140 {
+    grid-column-gap: 35rem;
+    -moz-column-gap: 35rem;
+         column-gap: 35rem;
   }
 
   .lg\:col-gap-px {
@@ -83631,6 +84630,12 @@ button.swiper-pagination-bullet {
          column-gap: 24rem;
   }
 
+  .lg\:gap-x-140 {
+    grid-column-gap: 35rem;
+    -moz-column-gap: 35rem;
+         column-gap: 35rem;
+  }
+
   .lg\:gap-x-px {
     grid-column-gap: 1px;
     -moz-column-gap: 1px;
@@ -83742,6 +84747,11 @@ button.swiper-pagination-bullet {
     row-gap: 24rem;
   }
 
+  .lg\:row-gap-140 {
+    grid-row-gap: 35rem;
+    row-gap: 35rem;
+  }
+
   .lg\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
@@ -83850,6 +84860,11 @@ button.swiper-pagination-bullet {
   .lg\:gap-y-96 {
     grid-row-gap: 24rem;
     row-gap: 24rem;
+  }
+
+  .lg\:gap-y-140 {
+    grid-row-gap: 35rem;
+    row-gap: 35rem;
   }
 
   .lg\:gap-y-px {
@@ -84854,6 +85869,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .lg\:translate-x-140 {
+    --transform-translate-x: 35rem;
+  }
+
   .lg\:translate-x-px {
     --transform-translate-x: 1px;
   }
@@ -84936,6 +85955,10 @@ button.swiper-pagination-bullet {
 
   .lg\:-translate-x-96 {
     --transform-translate-x: -24rem;
+  }
+
+  .lg\:-translate-x-140 {
+    --transform-translate-x: -35rem;
   }
 
   .lg\:-translate-x-px {
@@ -85042,6 +86065,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .lg\:translate-y-140 {
+    --transform-translate-y: 35rem;
+  }
+
   .lg\:translate-y-px {
     --transform-translate-y: 1px;
   }
@@ -85124,6 +86151,10 @@ button.swiper-pagination-bullet {
 
   .lg\:-translate-y-96 {
     --transform-translate-y: -24rem;
+  }
+
+  .lg\:-translate-y-140 {
+    --transform-translate-y: -35rem;
   }
 
   .lg\:-translate-y-px {
@@ -85230,6 +86261,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .lg\:hover\:translate-x-140:hover {
+    --transform-translate-x: 35rem;
+  }
+
   .lg\:hover\:translate-x-px:hover {
     --transform-translate-x: 1px;
   }
@@ -85312,6 +86347,10 @@ button.swiper-pagination-bullet {
 
   .lg\:hover\:-translate-x-96:hover {
     --transform-translate-x: -24rem;
+  }
+
+  .lg\:hover\:-translate-x-140:hover {
+    --transform-translate-x: -35rem;
   }
 
   .lg\:hover\:-translate-x-px:hover {
@@ -85418,6 +86457,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .lg\:hover\:translate-y-140:hover {
+    --transform-translate-y: 35rem;
+  }
+
   .lg\:hover\:translate-y-px:hover {
     --transform-translate-y: 1px;
   }
@@ -85500,6 +86543,10 @@ button.swiper-pagination-bullet {
 
   .lg\:hover\:-translate-y-96:hover {
     --transform-translate-y: -24rem;
+  }
+
+  .lg\:hover\:-translate-y-140:hover {
+    --transform-translate-y: -35rem;
   }
 
   .lg\:hover\:-translate-y-px:hover {
@@ -85606,6 +86653,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .lg\:focus\:translate-x-140:focus {
+    --transform-translate-x: 35rem;
+  }
+
   .lg\:focus\:translate-x-px:focus {
     --transform-translate-x: 1px;
   }
@@ -85688,6 +86739,10 @@ button.swiper-pagination-bullet {
 
   .lg\:focus\:-translate-x-96:focus {
     --transform-translate-x: -24rem;
+  }
+
+  .lg\:focus\:-translate-x-140:focus {
+    --transform-translate-x: -35rem;
   }
 
   .lg\:focus\:-translate-x-px:focus {
@@ -85794,6 +86849,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .lg\:focus\:translate-y-140:focus {
+    --transform-translate-y: 35rem;
+  }
+
   .lg\:focus\:translate-y-px:focus {
     --transform-translate-y: 1px;
   }
@@ -85876,6 +86935,10 @@ button.swiper-pagination-bullet {
 
   .lg\:focus\:-translate-y-96:focus {
     --transform-translate-y: -24rem;
+  }
+
+  .lg\:focus\:-translate-y-140:focus {
+    --transform-translate-y: -35rem;
   }
 
   .lg\:focus\:-translate-y-px:focus {
@@ -86481,6 +87544,18 @@ button.swiper-pagination-bullet {
     margin-left: calc(24rem * calc(1 - var(--space-x-reverse)));
   }
 
+  .xl\:space-y-140 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(35rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(35rem * var(--space-y-reverse));
+  }
+
+  .xl\:space-x-140 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(35rem * var(--space-x-reverse));
+    margin-left: calc(35rem * calc(1 - var(--space-x-reverse)));
+  }
+
   .xl\:space-y-px > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(1px * calc(1 - var(--space-y-reverse)));
@@ -86731,6 +87806,18 @@ button.swiper-pagination-bullet {
     --space-x-reverse: 0;
     margin-right: calc(-24rem * var(--space-x-reverse));
     margin-left: calc(-24rem * calc(1 - var(--space-x-reverse)));
+  }
+
+  .xl\:-space-y-140 > :not(template) ~ :not(template) {
+    --space-y-reverse: 0;
+    margin-top: calc(-35rem * calc(1 - var(--space-y-reverse)));
+    margin-bottom: calc(-35rem * var(--space-y-reverse));
+  }
+
+  .xl\:-space-x-140 > :not(template) ~ :not(template) {
+    --space-x-reverse: 0;
+    margin-right: calc(-35rem * var(--space-x-reverse));
+    margin-left: calc(-35rem * calc(1 - var(--space-x-reverse)));
   }
 
   .xl\:-space-y-px > :not(template) ~ :not(template) {
@@ -93240,6 +94327,30 @@ button.swiper-pagination-bullet {
     background-size: contain;
   }
 
+  .xl\:bg-25\% {
+    background-size: 25%;
+  }
+
+  .xl\:bg-33\% {
+    background-size: 33%;
+  }
+
+  .xl\:bg-40\% {
+    background-size: 40%;
+  }
+
+  .xl\:bg-50\% {
+    background-size: 50%;
+  }
+
+  .xl\:bg-66\% {
+    background-size: 66%;
+  }
+
+  .xl\:bg-75\% {
+    background-size: 75%;
+  }
+
   .xl\:border-collapse {
     border-collapse: collapse;
   }
@@ -96002,6 +97113,10 @@ button.swiper-pagination-bullet {
     height: 24rem;
   }
 
+  .xl\:h-140 {
+    height: 35rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -96218,6 +97333,10 @@ button.swiper-pagination-bullet {
     margin: 24rem;
   }
 
+  .xl\:m-140 {
+    margin: 35rem;
+  }
+
   .xl\:m-auto {
     margin: auto;
   }
@@ -96304,6 +97423,10 @@ button.swiper-pagination-bullet {
 
   .xl\:-m-96 {
     margin: -24rem;
+  }
+
+  .xl\:-m-140 {
+    margin: -35rem;
   }
 
   .xl\:-m-px {
@@ -96518,6 +97641,16 @@ button.swiper-pagination-bullet {
   .xl\:mx-96 {
     margin-left: 24rem;
     margin-right: 24rem;
+  }
+
+  .xl\:my-140 {
+    margin-top: 35rem;
+    margin-bottom: 35rem;
+  }
+
+  .xl\:mx-140 {
+    margin-left: 35rem;
+    margin-right: 35rem;
   }
 
   .xl\:my-auto {
@@ -96738,6 +97871,16 @@ button.swiper-pagination-bullet {
   .xl\:-mx-96 {
     margin-left: -24rem;
     margin-right: -24rem;
+  }
+
+  .xl\:-my-140 {
+    margin-top: -35rem;
+    margin-bottom: -35rem;
+  }
+
+  .xl\:-mx-140 {
+    margin-left: -35rem;
+    margin-right: -35rem;
   }
 
   .xl\:-my-px {
@@ -97084,6 +98227,22 @@ button.swiper-pagination-bullet {
 
   .xl\:ml-96 {
     margin-left: 24rem;
+  }
+
+  .xl\:mt-140 {
+    margin-top: 35rem;
+  }
+
+  .xl\:mr-140 {
+    margin-right: 35rem;
+  }
+
+  .xl\:mb-140 {
+    margin-bottom: 35rem;
+  }
+
+  .xl\:ml-140 {
+    margin-left: 35rem;
   }
 
   .xl\:mt-auto {
@@ -97436,6 +98595,22 @@ button.swiper-pagination-bullet {
 
   .xl\:-ml-96 {
     margin-left: -24rem;
+  }
+
+  .xl\:-mt-140 {
+    margin-top: -35rem;
+  }
+
+  .xl\:-mr-140 {
+    margin-right: -35rem;
+  }
+
+  .xl\:-mb-140 {
+    margin-bottom: -35rem;
+  }
+
+  .xl\:-ml-140 {
+    margin-left: -35rem;
   }
 
   .xl\:-mt-px {
@@ -97885,6 +99060,10 @@ button.swiper-pagination-bullet {
     padding: 24rem;
   }
 
+  .xl\:p-140 {
+    padding: 35rem;
+  }
+
   .xl\:p-px {
     padding: 1px;
   }
@@ -98097,6 +99276,16 @@ button.swiper-pagination-bullet {
   .xl\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .xl\:py-140 {
+    padding-top: 35rem;
+    padding-bottom: 35rem;
+  }
+
+  .xl\:px-140 {
+    padding-left: 35rem;
+    padding-right: 35rem;
   }
 
   .xl\:py-px {
@@ -98443,6 +99632,22 @@ button.swiper-pagination-bullet {
 
   .xl\:pl-96 {
     padding-left: 24rem;
+  }
+
+  .xl\:pt-140 {
+    padding-top: 35rem;
+  }
+
+  .xl\:pr-140 {
+    padding-right: 35rem;
+  }
+
+  .xl\:pb-140 {
+    padding-bottom: 35rem;
+  }
+
+  .xl\:pl-140 {
+    padding-left: 35rem;
   }
 
   .xl\:pt-px {
@@ -104243,6 +105448,10 @@ button.swiper-pagination-bullet {
     width: 24rem;
   }
 
+  .xl\:w-140 {
+    width: 35rem;
+  }
+
   .xl\:w-auto {
     width: auto;
   }
@@ -104496,6 +105705,11 @@ button.swiper-pagination-bullet {
     gap: 24rem;
   }
 
+  .xl\:gap-140 {
+    grid-gap: 35rem;
+    gap: 35rem;
+  }
+
   .xl\:gap-px {
     grid-gap: 1px;
     gap: 1px;
@@ -104625,6 +105839,12 @@ button.swiper-pagination-bullet {
     grid-column-gap: 24rem;
     -moz-column-gap: 24rem;
          column-gap: 24rem;
+  }
+
+  .xl\:col-gap-140 {
+    grid-column-gap: 35rem;
+    -moz-column-gap: 35rem;
+         column-gap: 35rem;
   }
 
   .xl\:col-gap-px {
@@ -104759,6 +105979,12 @@ button.swiper-pagination-bullet {
          column-gap: 24rem;
   }
 
+  .xl\:gap-x-140 {
+    grid-column-gap: 35rem;
+    -moz-column-gap: 35rem;
+         column-gap: 35rem;
+  }
+
   .xl\:gap-x-px {
     grid-column-gap: 1px;
     -moz-column-gap: 1px;
@@ -104870,6 +106096,11 @@ button.swiper-pagination-bullet {
     row-gap: 24rem;
   }
 
+  .xl\:row-gap-140 {
+    grid-row-gap: 35rem;
+    row-gap: 35rem;
+  }
+
   .xl\:row-gap-px {
     grid-row-gap: 1px;
     row-gap: 1px;
@@ -104978,6 +106209,11 @@ button.swiper-pagination-bullet {
   .xl\:gap-y-96 {
     grid-row-gap: 24rem;
     row-gap: 24rem;
+  }
+
+  .xl\:gap-y-140 {
+    grid-row-gap: 35rem;
+    row-gap: 35rem;
   }
 
   .xl\:gap-y-px {
@@ -105982,6 +107218,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .xl\:translate-x-140 {
+    --transform-translate-x: 35rem;
+  }
+
   .xl\:translate-x-px {
     --transform-translate-x: 1px;
   }
@@ -106064,6 +107304,10 @@ button.swiper-pagination-bullet {
 
   .xl\:-translate-x-96 {
     --transform-translate-x: -24rem;
+  }
+
+  .xl\:-translate-x-140 {
+    --transform-translate-x: -35rem;
   }
 
   .xl\:-translate-x-px {
@@ -106170,6 +107414,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .xl\:translate-y-140 {
+    --transform-translate-y: 35rem;
+  }
+
   .xl\:translate-y-px {
     --transform-translate-y: 1px;
   }
@@ -106252,6 +107500,10 @@ button.swiper-pagination-bullet {
 
   .xl\:-translate-y-96 {
     --transform-translate-y: -24rem;
+  }
+
+  .xl\:-translate-y-140 {
+    --transform-translate-y: -35rem;
   }
 
   .xl\:-translate-y-px {
@@ -106358,6 +107610,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .xl\:hover\:translate-x-140:hover {
+    --transform-translate-x: 35rem;
+  }
+
   .xl\:hover\:translate-x-px:hover {
     --transform-translate-x: 1px;
   }
@@ -106440,6 +107696,10 @@ button.swiper-pagination-bullet {
 
   .xl\:hover\:-translate-x-96:hover {
     --transform-translate-x: -24rem;
+  }
+
+  .xl\:hover\:-translate-x-140:hover {
+    --transform-translate-x: -35rem;
   }
 
   .xl\:hover\:-translate-x-px:hover {
@@ -106546,6 +107806,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .xl\:hover\:translate-y-140:hover {
+    --transform-translate-y: 35rem;
+  }
+
   .xl\:hover\:translate-y-px:hover {
     --transform-translate-y: 1px;
   }
@@ -106628,6 +107892,10 @@ button.swiper-pagination-bullet {
 
   .xl\:hover\:-translate-y-96:hover {
     --transform-translate-y: -24rem;
+  }
+
+  .xl\:hover\:-translate-y-140:hover {
+    --transform-translate-y: -35rem;
   }
 
   .xl\:hover\:-translate-y-px:hover {
@@ -106734,6 +108002,10 @@ button.swiper-pagination-bullet {
     --transform-translate-x: 24rem;
   }
 
+  .xl\:focus\:translate-x-140:focus {
+    --transform-translate-x: 35rem;
+  }
+
   .xl\:focus\:translate-x-px:focus {
     --transform-translate-x: 1px;
   }
@@ -106816,6 +108088,10 @@ button.swiper-pagination-bullet {
 
   .xl\:focus\:-translate-x-96:focus {
     --transform-translate-x: -24rem;
+  }
+
+  .xl\:focus\:-translate-x-140:focus {
+    --transform-translate-x: -35rem;
   }
 
   .xl\:focus\:-translate-x-px:focus {
@@ -106922,6 +108198,10 @@ button.swiper-pagination-bullet {
     --transform-translate-y: 24rem;
   }
 
+  .xl\:focus\:translate-y-140:focus {
+    --transform-translate-y: 35rem;
+  }
+
   .xl\:focus\:translate-y-px:focus {
     --transform-translate-y: 1px;
   }
@@ -107004,6 +108284,10 @@ button.swiper-pagination-bullet {
 
   .xl\:focus\:-translate-y-96:focus {
     --transform-translate-y: -24rem;
+  }
+
+  .xl\:focus\:-translate-y-140:focus {
+    --transform-translate-y: -35rem;
   }
 
   .xl\:focus\:-translate-y-px:focus {
