@@ -1,4 +1,7 @@
-html { scroll-behavior: smooth; }
+html { 
+  scroll-behavior: smooth; 
+  scroll-padding-top: var(--scroll-padding, 75px);
+}
 
 /******************************
 * Main Navigation Components

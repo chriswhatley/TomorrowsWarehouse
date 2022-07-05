@@ -8,7 +8,7 @@
         <section class="h-screen hero text-white bg-gray-800 bg-center bg-cover xl:bg-fixed">  
      
             <div class="absolute w-full z-50" x-data="{ open: false }">
-                <div class="fixed w-full py-3 bg-gray-900 shadow-lg border-b-4 md:border-b-8 border-red-800">
+                <div class="primary-navigation fixed w-full py-3 bg-gray-900 shadow-lg border-b-4 md:border-b-8 border-red-800">
                     @include('_partials/navigation')
                 </div>
             </div>

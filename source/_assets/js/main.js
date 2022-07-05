@@ -41,3 +41,9 @@ const swiper = new Swiper('.swiper-container', {
       }
     }
 });
+
+const navigationHeight = document.querySelector('.primary-navigation').offsetHeight;
+
+// console.log('Navigation Height : ' + navigationHeight); 
+
+document.documentElement.style.setProperty('--scroll-padding', (navigationHeight + 25) + "px");

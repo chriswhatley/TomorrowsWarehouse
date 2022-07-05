@@ -3,9 +3,9 @@
 @section('content')
 
 	<main class="z-20">
-        <div class="h-4" id="about-tomorrows-warehouse"></div>
+        {{-- <div class="h-4" id="about-tomorrows-warehouse"></div> --}}
 	
-        <section class="relative lg:h-140 lg:my-24 lg:flex lg:items-center">     
+        <section class="relative lg:h-140 lg:my-24 lg:flex lg:items-center" id="about-tomorrows-warehouse">     
 
             <div class="intro hidden lg:block absolute top-0 left-0 h-full w-1/2"></div> 
 
